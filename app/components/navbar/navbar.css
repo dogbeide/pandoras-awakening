@@ -6,6 +6,7 @@
 }
 
 .nav-logo {
+  min-width: 176px;
   height: 100px;
   width: 176px;
 }
@@ -13,6 +14,6 @@
 .nav-items {
   width: 100%;
   font-size: 18px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--pandoras-purple);
 }
