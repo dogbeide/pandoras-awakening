@@ -2,7 +2,7 @@
   background-image: url('/navbar bg.webp');
   background-size: 100% 100%;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
 }
 
 .nav-logo {
@@ -11,9 +11,30 @@
   width: 176px;
 }
 
+.nav-logo-sm {
+  min-width: 113px;
+}
+
 .nav-items {
   width: 100%;
   font-size: 18px;
   /* font-weight: bold; */
   color: var(--pandoras-purple);
+}
+
+#pre-nav {
+  color: var(--pandoras-purple);
+}
+
+.schedule-btn {
+  /* font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  background-color: var(--pandoras-orange);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    min-height: 120px;
+  }
 }
