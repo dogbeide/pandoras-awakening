@@ -1,9 +1,10 @@
-import Image from "next/image";
+
+import Banner from "./components/banner/Banner";
 
 export default function Home() {
   return (
     <main>
-      pandoras home
+      <Banner />
     </main>
   );
 }
