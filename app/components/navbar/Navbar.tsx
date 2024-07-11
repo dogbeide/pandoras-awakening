@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bad_Script, Square_Peg, Just_Another_Hand } from 'next/font/google'
+import { Bad_Script, Square_Peg } from 'next/font/google'
 
 import Dropdown from "./Dropdown";
+import BtnCTA from '../buttons/btn-cta';
 import SocialIcons from './SocialIcons';
 import '@/app/components/navbar/navbar.css'
 
 const badScript = Square_Peg({ subsets: ["latin"], weight: "400" });
-const neucha = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
 
 export interface MenuItem {
   title: string;
@@ -68,13 +68,9 @@ export default function Navbar() {
         <div className='ml-9 max-md:ml-0'>
           <SocialIcons />
         </div>
-        <div className={`${badScript.className} ml-4 max-md:ml-0 contact-info text-xs max-md:text-[0.7rem] flex max-sm:flex-col font-sans`}>
-          {/* <span>12000 Biscayne Blvd, Miami, FL 33181 | <a className='underline' href='tel:+16153756896'>Tel: (615) 375-6896</a> |&nbsp;</span>
-          <span>COVID 19: We are following all CDC guidelines</span> */}
-        </div>
-        <a href="https://calendly.com/holisticsextherapist" target='_blank' rel='noopener'>
-          <button className={`schedule-btn max-md:hidden mt-4 px-2 mr-6 text-nowrap ${neucha.className}`}>SCHEDULE APPOINTMENT</button>
-        </a>
+        <BtnCTA classNames="max-md:hidden mt-4 px-2 mr-6" href="https://calendly.com/holisticsextherapist" target="_blank">
+          SCHEDULE APPOINTMENT
+        </BtnCTA>
       </div>
 
       <div className='flex flex-row justify-between items-center px-3'>
@@ -94,9 +90,10 @@ export default function Navbar() {
           ))}
         </div>
         <div className={`nav-items flex flex-row justify-end items-center pl-1 pr-4 ${badScript.className} max-md:flex hidden`}>
-          <a href="https://calendly.com/holisticsextherapist" target='_blank' rel='noopener'>
-            <button className={`schedule-btn hidden max-md:block my-2 px-2 mr-5 ${neucha.className} text-nowrap`}>SCHEDULE APPOINTMENT</button>
-          </a>
+          <BtnCTA classNames="hidden max-md:block my-2 px-2 mr-5" href="https://calendly.com/holisticsextherapist" 
+          target="_blank" fontSize='14px' >
+            SCHEDULE APPOINTMENT
+          </BtnCTA>
           <Dropdown item={menuItems[1]} />
         </div>
       </div>

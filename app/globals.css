@@ -7,17 +7,6 @@
   --pandoras-orange: #e06600;
 }
 
-.schedule-btn {
-  background-color: var(--pandoras-orange);
-  border-radius: 4px;
-  font-size: 18px;
-  transition: all ease 0.2s;
-}
-
-.schedule-btn:hover {
-  box-shadow: 0px 0px 4px rgba(0,0,0, 0.5);
-}
-
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

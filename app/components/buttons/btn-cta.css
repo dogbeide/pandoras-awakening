@@ -1,0 +1,11 @@
+.btn-cta {
+  background-color: var(--pandoras-orange);
+  border-radius: 4px;
+  /* font-size: 18px; */
+  transition: all ease 0.2s;
+}
+
+.btn-cta:hover {
+  box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+  color: var(--pandoras-purple);
+}
