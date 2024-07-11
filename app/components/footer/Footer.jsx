@@ -25,7 +25,7 @@ export default function Footer() {
         
       </div>
       <div className='flex flex-col px-3 justify-start items-center'>
-        <SocialIcons />
+        <SocialIcons footer={true} />
         <a href="https://providers.therapyforblackgirls.com/listing/pandoras-awakening/">
           <Image className='mt-4' src="/TFBG-Logo-Wine.webp" alt='Therapy for Black Girls' width={64} height={64} />
         </a>
