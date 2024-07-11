@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bad_Script, Just_Another_Hand } from 'next/font/google'
+import { Bad_Script, Square_Peg, Just_Another_Hand } from 'next/font/google'
 
 import Dropdown from "./Dropdown";
 import SocialIcons from './SocialIcons';
 import '@/app/components/navbar/navbar.css'
 
-const badScript = Bad_Script({ subsets: ["latin"], weight: "400" });
+const badScript = Square_Peg({ subsets: ["latin"], weight: "400" });
 const neucha = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
 
 export interface MenuItem {
@@ -85,7 +85,7 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.route || '/'}
-              className='hover:text-blue-600 font-bold px-2 py-4'
+              className='hover:text-blue-600 px-2 py-4'
             >
               {item.title}
             </Link>
