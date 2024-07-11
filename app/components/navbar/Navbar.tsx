@@ -62,7 +62,7 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='sticky top-0'>
+    <div id="navbar" className='sticky top-0 z-50'>
 
       <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-green-300 to-transparent bg-opacity-20 px-2">
         <div className='ml-9 max-md:ml-0'>
@@ -72,7 +72,9 @@ export default function Navbar() {
           {/* <span>12000 Biscayne Blvd, Miami, FL 33181 | <a className='underline' href='tel:+16153756896'>Tel: (615) 375-6896</a> |&nbsp;</span>
           <span>COVID 19: We are following all CDC guidelines</span> */}
         </div>
-        <button className={`schedule-btn max-md:hidden mt-4 px-2 mr-6 text-nowrap ${neucha.className}`}>SCHEDULE APPOINTMENT</button>
+        <a href="https://calendly.com/holisticsextherapist" target='_blank' rel='noopener'>
+          <button className={`schedule-btn max-md:hidden mt-4 px-2 mr-6 text-nowrap ${neucha.className}`}>SCHEDULE APPOINTMENT</button>
+        </a>
       </div>
 
       <div className='flex flex-row justify-between items-center px-3'>

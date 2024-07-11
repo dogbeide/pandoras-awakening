@@ -26,13 +26,6 @@
   color: var(--pandoras-purple);
 }
 
-.schedule-btn {
-  /* font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  background-color: var(--pandoras-orange);
-  border-radius: 4px;
-  font-size: 18px;
-}
-
 @media (max-width: 768px) {
   #navbar {
     min-height: 120px;
