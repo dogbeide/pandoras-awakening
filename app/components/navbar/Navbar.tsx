@@ -62,7 +62,7 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='sticky'>
+    <div id="navbar" className='sticky top-0'>
 
       <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-green-300 to-transparent bg-opacity-20 px-2">
         <div className='ml-9 max-md:ml-0'>
