@@ -62,16 +62,17 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='fixed'>
+    <div id="navbar" className='sticky'>
 
       <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-green-300 to-transparent bg-opacity-20 px-2">
-        <SocialIcons />
-        <div className="ml-4 max-md:ml-0  contact-info text-xs max-md:text-[0.7rem] flex max-sm:flex-col font-sans">
-          <span>12000 Biscayne Blvd, Miami, FL 33181 | <a className='underline' href='tel:+16153756896'>Tel: (615) 375-6896</a> |&nbsp;</span>
-          {/* <span></span> */}
-          <span>COVID 19: We are following all CDC guidelines</span>
+        <div className='ml-9 max-md:ml-0'>
+          <SocialIcons />
         </div>
-        <button className={`schedule-btn max-md:hidden my-2 px-2 text-nowrap ${neucha.className}`}>SCHEDULE APPOINTMENT</button>
+        <div className={`${badScript.className} ml-4 max-md:ml-0 contact-info text-xs max-md:text-[0.7rem] flex max-sm:flex-col font-sans`}>
+          {/* <span>12000 Biscayne Blvd, Miami, FL 33181 | <a className='underline' href='tel:+16153756896'>Tel: (615) 375-6896</a> |&nbsp;</span>
+          <span>COVID 19: We are following all CDC guidelines</span> */}
+        </div>
+        <button className={`schedule-btn max-md:hidden mt-4 px-2 mr-6 text-nowrap ${neucha.className}`}>SCHEDULE APPOINTMENT</button>
       </div>
 
       <div className='flex flex-row justify-between items-center px-3'>
