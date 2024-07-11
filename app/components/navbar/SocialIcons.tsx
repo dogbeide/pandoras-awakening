@@ -2,7 +2,7 @@
 
 export default function SocialIcons() {
   return (
-    <div className="social-icons flex flex-row justify-between w-28 ml-9 max-lg:ml-0 my-1">
+    <div className="social-icons flex flex-row justify-between w-28 my-1">
       <a href='https://www.facebook.com/pandorasawakening/' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
