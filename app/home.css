@@ -1,3 +1,8 @@
 .intro-container {
   /* background: url('/pexels-curiosophotography-288093.jpg'); */
 }
+
+.spaced-paragraphs p {
+  /* margin-bottom: 10px; */
+  font-size: 18px;
+}
