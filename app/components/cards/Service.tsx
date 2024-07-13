@@ -8,7 +8,7 @@ export default function Service({ href, title, desc, imgUrl } : {
   imgUrl: string,
 }) {
   return (
-    <div className="flex flex-col items-center my-8 max-sm:my-3 py-3 px-3 bg-pink-200 bg-opacity-10 rounded-sm">
+    <div className="flex flex-col items-center mt-8 max-sm:my-3 py-3 px-5 bg-pink-200 bg-opacity-10 rounded-sm">
       <a href={href}>
         <Image 
           src={imgUrl}
