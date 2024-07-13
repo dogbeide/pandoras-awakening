@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { justAnotherHand } from "@/app/lib/fonts";
 
-export default function Service({ href, title, desc, imgUrl } : {
+export default function OfferingCard({ href, title, desc, imgUrl } : {
   href: string,
   title: string,
   desc: string,

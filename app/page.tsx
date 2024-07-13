@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { montserrat, squarePeg, justAnotherHand } from "./lib/fonts";
-import services from "./lib/services-data";
+import offerings from "./lib/offerings-data";
 
 import Banner from "./components/banner/Banner";
 import BtnCTA from "@/app/components/buttons/btn-cta";
-import Service from "./components/cards/Service";
+import OfferingCard from "./components/cards/OfferingCard";
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
 import Title from "./components/text/title";
@@ -47,23 +47,23 @@ export default function Home() {
           alt="man-standing-under-rainbow-waterfall"
         />
       </div>
-      <div id="home-services" className={`px-20 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
-        <Title href='/services'>Our Services</Title>
+      <div id="home-offerings" className={`px-20 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
+        <Title href='/offerings'>Offerings</Title>
         <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
-          {services.slice(0, 4).map((service) => (
-            <Service
-              key={service.title}
-              title={service.title}
-              desc={service.desc}
-              href={service.href}
-              imgUrl={service.imgUrl}
+          {offerings.slice(0, 4).map((offering) => (
+            <OfferingCard
+              key={offering.title}
+              title={offering.title}
+              desc={offering.desc}
+              href={offering.href}
+              imgUrl={offering.imgUrl}
             />
           ))}
         </div>
         <a className="text-pandoras-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
-          href={'/services'}
+          href={'/offerings'}
         >
-          (See All Services...)
+          (See All Offerings...)
         </a>
       </div>
     </main>
