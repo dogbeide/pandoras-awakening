@@ -41,11 +41,11 @@ export default function Home() {
         </span>
         <BtnCTA classNames='text-white mt-4' href='/about' fontSize="22px">ABOUT US</BtnCTA>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        {/* <img
           className="mt-6"
           src="/man-standing-under-rainbow-waterfall.webp"
           alt="man-standing-under-rainbow-waterfall"
-        />
+        /> */}
       </div>
       <div id="home-offerings" className={`px-20 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
         <Title href='/offerings'>Offerings</Title>
