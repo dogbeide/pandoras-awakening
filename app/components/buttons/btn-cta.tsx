@@ -1,6 +1,6 @@
 import { justAnotherHand } from '@/app/lib/fonts';
 
-import './btn-cta.css'
+// import './btn-cta.css'
 
 type btnCTATypes = {
   classNames?: string,

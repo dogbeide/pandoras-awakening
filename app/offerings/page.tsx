@@ -1,7 +1,7 @@
 import { montserrat } from "../lib/fonts"
 import offerings from "../lib/offerings-data"
 import OfferingCard from "../components/cards/OfferingCard"
-import Title from "../components/text/title"
+import Title from "../components/text/Title"
 
 export default function Page() {
 
