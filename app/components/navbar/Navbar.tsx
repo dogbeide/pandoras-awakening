@@ -7,7 +7,7 @@ import BtnCTA from '../buttons/btn-cta';
 import SocialIcons from './SocialIcons';
 import '@/app/components/navbar/navbar.css'
 
-const badScript = Square_Peg({ subsets: ["latin"], weight: "400" });
+const squarePeg = Square_Peg({ subsets: ["latin"], weight: "400" });
 
 export interface MenuItem {
   title: string;
@@ -78,7 +78,7 @@ export default function Navbar() {
           <Image className='nav-logo max-md:hidden' src="/logo.webp" alt="Pandora's Awakening logo" width={176} height={100} />
           <Image className='nav-logo-sm max-md:block hidden' src="/logo.webp" alt="Pandora's Awakening logo" width={113} height={64} />
         </Link>
-        <div className={`nav-items flex flex-row justify-around px-4 ${badScript.className} max-md:hidden`}>
+        <div className={`nav-items flex flex-row justify-around px-4 ${squarePeg.className} max-md:hidden`}>
           {menuItems[1].children?.map(item => (
             <Link
               key={item.title}
@@ -89,7 +89,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        <div className={`nav-items flex flex-row justify-end items-center pl-1 pr-4 ${badScript.className} max-md:flex hidden`}>
+        <div className={`nav-items flex flex-row justify-end items-center pl-1 pr-4 ${squarePeg.className} max-md:flex hidden`}>
           <BtnCTA classNames="hidden max-md:block my-2 px-2 mr-5" href="https://calendly.com/holisticsextherapist" 
           target="_blank" fontSize='14px' >
             SCHEDULE APPOINTMENT

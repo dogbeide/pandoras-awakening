@@ -4,8 +4,23 @@
   /* font-size: 18px; */
   transition: all ease 0.2s;
 }
-
 .btn-cta:hover {
   box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+  color: var(--pandoras-purple);
+}
+
+.btn-cta-text {
+  transition: all ease 0.2s;
+}
+.btn-cta-text:hover {
+  /* box-shadow: 1px 1px 6px rgba(0,0,0, 0.5); */
+  color: var(--pandoras-green);
+}
+
+.btn-cta-img {
+  transition: all ease 0.2s;
+}
+.btn-cta-img:hover {
+  box-shadow: 0px 0px 1px 2px var(--pandoras-green);
   color: var(--pandoras-purple);
 }
