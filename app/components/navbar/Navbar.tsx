@@ -1,13 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bad_Script, Square_Peg } from 'next/font/google'
+import { squarePeg } from '@/app/lib/fonts';
 
 import Dropdown from "./Dropdown";
 import BtnCTA from '../buttons/btn-cta';
 import SocialIcons from './SocialIcons';
 import '@/app/components/navbar/navbar.css'
-
-const squarePeg = Square_Peg({ subsets: ["latin"], weight: "400" });
 
 export interface MenuItem {
   title: string;

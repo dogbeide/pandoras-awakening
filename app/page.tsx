@@ -1,13 +1,8 @@
 import Image from "next/image";
-import { Montserrat, Square_Peg, Just_Another_Hand } from "next/font/google";
+import { montserrat, squarePeg, justAnotherHand } from "./lib/fonts";
 
 import Banner from "./components/banner/Banner";
 import BtnCTA from "@/app/components/buttons/btn-cta";
-
-const montserrat = Montserrat({ subsets: ['latin'], weight: '400' });
-const badScript = Square_Peg({ subsets: ['latin'], weight: '400' });
-const justAnotherHand = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
-
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
 
@@ -16,7 +11,7 @@ export default function Home() {
     <main>
       <Banner />
       <div className="flex flex-col items-center justify-center py-8 px-9 max-md:px-3 intro-container bg-gradient-to-tr from-pandoras-purple to-pink-500">
-        <span className={`max-md:text-5xl text-6xl  mb-4 ${badScript.className} font-black`}>Pandora’s Awakening</span>
+        <span className={`max-md:text-5xl text-6xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
         <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-300 ${montserrat.className}`}>
           <p className="mt-3">Are you going through a challenging time in your life?</p>
           <p className="mt-3">We greatly empathize with what you might be experiencing</p>
@@ -50,7 +45,7 @@ export default function Home() {
         />
       </div>
       <div id="home-services" className={`px-28 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
-        <div className={`${badScript.className} text-center max-md:text-5xl text-6xl text-slate-100`}>Our Services</div>
+        <div className={`${squarePeg.className} text-center max-md:text-5xl text-6xl text-slate-100`}>Our Services</div>
         <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
           <div className="flex flex-col items-center my-8 py-3 px-3 bg-pink-200 bg-opacity-10 rounded-sm">
             <a href="/services/sex-therapy">

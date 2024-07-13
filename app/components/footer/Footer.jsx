@@ -1,14 +1,12 @@
 import Image from 'next/image'
-import { Bad_Script, Just_Another_Hand } from 'next/font/google'
-
-const neucha = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
+import { justAnotherHand } from '@/app/lib/fonts';
 
 import SocialIcons from '../navbar/SocialIcons'
 import './footer.css'
 
 export default function Footer() {
   return(
-    <div id="footer" className={`${neucha.className} tracking-wider flex flex-row max-md:flex-col justify-center items-center py-3 text-white max-md:text-sm max-sm:text-xs`}>
+    <div id="footer" className={`${justAnotherHand.className} tracking-wider flex flex-row max-md:flex-col justify-center items-center py-3 text-white max-md:text-sm max-sm:text-xs`}>
       <div className='px-3 max-md:my-3'>
         <Image className='min-w-28 min-h-16' src="/logo-white.webp" alt="pandoras logo white" width={113} height={64} />
       </div>

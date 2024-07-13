@@ -1,8 +1,6 @@
-import { Just_Another_Hand } from "next/font/google";
+import { justAnotherHand } from '@/app/lib/fonts';
 
 import './btn-cta.css'
-
-const justAnotherHand = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
 
 type btnCTATypes = {
   classNames?: string,

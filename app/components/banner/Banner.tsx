@@ -1,11 +1,8 @@
 import Image from "next/image"
-import { Dancing_Script, Just_Another_Hand } from "next/font/google"
+import { dancingScript } from "@/app/lib/fonts";
 
 import BtnCTA from "../buttons/btn-cta";
 import styles from './banner.module.css';
-
-const dancingScript = Dancing_Script({ subsets: ['latin'], weight: '400' })
-const justAnotherHand = Just_Another_Hand({ subsets: ["latin"], weight: "400" });
 
 export default function Banner() {
 
