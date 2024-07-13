@@ -3,6 +3,7 @@ import { montserrat, squarePeg, justAnotherHand } from "./lib/fonts";
 
 import Banner from "./components/banner/Banner";
 import BtnCTA from "@/app/components/buttons/btn-cta";
+import Service from "./components/cards/Service";
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
 
@@ -45,32 +46,16 @@ export default function Home() {
         />
       </div>
       <div id="home-services" className={`px-28 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
-        <div className={`${squarePeg.className} text-center max-md:text-5xl text-6xl text-slate-100`}>Our Services</div>
+        <div className={`${squarePeg.className} text-center max-md:text-5xl text-6xl text-slate-100 mb-0 max-sm:mb-6`}>Our Services</div>
         <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
-          <div className="flex flex-col items-center my-8 py-3 px-3 bg-pink-200 bg-opacity-10 rounded-sm">
-            <a href="/services/sex-therapy">
-              <Image 
-                src='/Renee-Burwell-Sex-Therapy-thumbnail.webp'
-                alt='Sex Therapy'
-                width={150}
-                height={150}
-                className="rounded-full btn-cta-img" 
-              />
-            </a>
-            <div className="text-center flex flex-col">
-              <a className={`btn-cta-text text-3xl text-pandoras-orange mt-3 font-bold ${justAnotherHand.className}`} href="/services/sex-therapy">SEX THERAPY</a>
-              <hr className="bg-pandoras-orange h-1 border-none my-3" />
-              <span className="text-base text-slate-200">
-                If you are struggling with issues of sexual intimacy or desire, 
-                we can help you chart a path forward in your sex life.
-              </span>
-              <a className="btn-cta-text mt-6 text-pandoras-orange" href="/services/sex-therapy">
-                Learn More...
-              </a>
-            </div>
-
-          </div>
-
+          <Service 
+            href='/services/sex-therapy' 
+            imgUrl='/Renee-Burwell-Sex-Therapy-thumbnail.webp' 
+            title='SEX THERAPY' 
+            desc={`
+            If you are struggling with issues of sexual intimacy or desire, 
+            we can help you chart a path forward in your sex life.
+          `} />
         </div>
       </div>
     </main>
