@@ -42,27 +42,31 @@ const offerings = [
   },
   {
     title: 'Concierge Counseling',
-    desc: ``,
+    desc: `Pandora's Awakening offers concierge counseling as a means to create additional confidentiality 
+          for those needing a therapist that meets you where you are.`,
     href: '/offerings/concierge-counseling',
-    imgUrl: ''
+    imgUrl: '/concierge_150x150.webp'
   },
   {
     title: 'Intensive Therapy',
-    desc: ``,
+    desc: `Pandora's Awakening is now offering intensive Couples and/or EMDR therapy packages. 
+          Our intensive packages include 3, 6, 9 or twelve hours of therapy over a one or two-day time period.`,
     href: '/offerings/intensive-therapy',
-    imgUrl: ''
+    imgUrl: '/intensive-therapy.webp'
   },
   {
     title: 'MusiCares',
-    desc: ``,
+    desc: `Pandora's Awakening is in collaboration with MusiCares 
+    to offer individuals and couples in the music industry mental and sexual health services. `,
     href: '/offerings/musicares',
-    imgUrl: ''
+    imgUrl: '/musicares_150x150.webp'
   },
   {
     title: 'Kundalini Yoga',
-    desc: ``,
-    href: '/offerings/',
-    imgUrl: ''
+    desc: `Always remember to honor your body and participate to the degree that you are comfortable. 
+          Kundalini Yoga is perfect for beginners, so join us even if you have never done any yoga.`,
+    href: '/offerings/kundalini-yoga',
+    imgUrl: '/Renee-kundalini-yoga_150x150.webp'
   },
   {
     title: 'Media/Speaking Engagements',

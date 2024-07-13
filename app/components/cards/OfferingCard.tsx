@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { justAnotherHand } from "@/app/lib/fonts";
+import '@/app/components/buttons/btn-cta.css'
 
 export default function OfferingCard({ href, title, desc, imgUrl } : {
   href: string,
@@ -19,11 +20,13 @@ export default function OfferingCard({ href, title, desc, imgUrl } : {
         />
       </a>
       <div className="text-center flex flex-col">
-        <a className={`btn-cta-text hover:text-pandoras-teal text-3xl text-pandoras-orange mt-3 font-bold uppercase ${justAnotherHand.className}`} href="/services/sex-therapy">
+        <a className={`btn-cta-text hover:text-pandoras-teal text-3xl text-pandoras-orange mt-3 font-bold uppercase 
+                      ${justAnotherHand.className}`}
+          href={href}>
           {title}
         </a>
         <hr className="bg-pandoras-orange h-1 border-none my-3" />
-        <span className="text-base text-slate-200">
+        <span className="text-sm text-slate-200">
           {desc}
         </span>
         <a className="btn-cta-text hover:text-pandoras-teal mt-6 text-pandoras-orange" href={href}>
