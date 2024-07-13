@@ -7,6 +7,7 @@ import BtnCTA from "@/app/components/buttons/btn-cta";
 import Service from "./components/cards/Service";
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
+import Title from "./components/text/title";
 
 export default function Home() {
   return (
@@ -47,9 +48,7 @@ export default function Home() {
         />
       </div>
       <div id="home-services" className={`px-20 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
-        <div className={`${squarePeg.className} text-center max-md:text-5xl text-6xl text-slate-100 mb-5 max-sm:mb-6`}>
-          Our Services
-        </div>
+        <Title href='/services'>Our Services</Title>
         <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
           {services.slice(0, 4).map((service) => (
             <Service

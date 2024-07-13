@@ -1,14 +1,13 @@
-import { squarePeg, montserrat } from "../lib/fonts"
-import Service from "../components/cards/Service"
+import { montserrat } from "../lib/fonts"
 import services from "../lib/services-data"
+import Service from "../components/cards/Service"
+import Title from "../components/text/title"
 
 export default function Page() {
 
   return (
     <div id="home-services" className={`px-20 max-md:px-10 max-sm:px-6 py-7 bg-pandoras-purple ${montserrat.className}`}>
-      <div className={`${squarePeg.className} text-center max-md:text-5xl text-6xl text-slate-100 mb-5 max-sm:mb-6`}>
-        Our Services
-      </div>
+      <Title>Our Services</Title>
       <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-lg:gap-5 gap-8">
         {services.map((service) => (
           <Service
