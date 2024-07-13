@@ -8,7 +8,7 @@ export default function Service({ href, title, desc, imgUrl } : {
   imgUrl: string,
 }) {
   return (
-    <div className="flex flex-col items-center mt-8 max-sm:my-3 py-3 px-5 bg-pink-200 bg-opacity-10 rounded-sm">
+    <div className="flex flex-col items-center my-1 py-3 px-5 bg-pink-200 bg-opacity-10 rounded-sm">
       <a href={href}>
         <Image 
           src={imgUrl}
@@ -19,7 +19,7 @@ export default function Service({ href, title, desc, imgUrl } : {
         />
       </a>
       <div className="text-center flex flex-col">
-        <a className={`btn-cta-text text-3xl text-pandoras-orange mt-3 font-bold ${justAnotherHand.className}`} href="/services/sex-therapy">
+        <a className={`btn-cta-text text-3xl text-pandoras-orange mt-3 font-bold uppercase ${justAnotherHand.className}`} href="/services/sex-therapy">
           {title}
         </a>
         <hr className="bg-pandoras-orange h-1 border-none my-3" />
