@@ -29,13 +29,20 @@ export default function FaqItem({ key, faq } : {
       <div className={`flex flex-col items-center mb-5 max-md:mb-3 mx-3 w-[50%] max-sm:w-[100%] border-2 rounded-sm 
                       bg-black bg-opacity-10 'border-pandoras-teal'`}
       >
-        
-        <button onClick={toggleExpanded}
-          className={`${justAnotherHand.className} btn-cta-text 'hover:text-pandoras-teal' 
-                      font-bold px-2 py-2 max-md:py-1 text-3xl max-md:text-2xl max-sm:text-xl tracking-wider text-slate-200`}
+        <div
+          onClick={toggleExpanded}
+          className={`grid grid-cols-12 w-full text-3xl max-md:text-2xl max-sm:text-xl tracking-wider text-slate-200 
+                      cursor-pointer ${justAnotherHand.className}`}
         >
-          {faq.q}
-        </button>
+          <div className="spacer col-span-1"></div>
+          <button
+            className={`col-span-10 btn-cta-text hover:text-pandoras-teal  
+                        px-2 py-2 max-md:py-1`}
+          >
+            {faq.q}
+          </button>
+          <div className="col-span-1 btn-cta-text hover:text-pandoras-teal text-4xl max-md:text-3xl">{expanded ? '-' : '+'}</div>
+        </div>
 
         {<div 
           className={`${expanded ? 'expanded' : ''} faq-answer text-sm text-slate-100 transition-all ease-in-out duration-200`}
