@@ -27,7 +27,7 @@ export default function FaqItem({ key, faq } : {
       className="w-full px-3 flex flex-col items-center"
     >
       <div className={`flex flex-col items-center mb-5 max-md:mb-3 mx-3 w-[50%] max-sm:w-[100%] border-2 rounded-sm 
-                      bg-black bg-opacity-10 'border-pandoras-teal'`}
+                      bg-black bg-opacity-10 border-white hover:border-pandoras-teal transition-all duration-200`}
       >
         <div
           onClick={toggleExpanded}
