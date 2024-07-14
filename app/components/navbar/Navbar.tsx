@@ -39,7 +39,7 @@ const menuItems: MenuItem[] = [
       },
       {
         title: "FAQ",
-        route: "/faqs",
+        route: "/faq",
       },
       {
         title: "Blog",
