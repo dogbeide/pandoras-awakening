@@ -8,7 +8,7 @@ export default function SocialIcons({ footer=false } :
 ) {
   return (
     <div className="social-icons flex flex-row justify-between w-28 my-1">
-      <a href='https://www.facebook.com/pandorasawakening/' target='_blank' className="px-1">
+      <a aria-label="Facebook" href='https://www.facebook.com/pandorasawakening/' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,8 @@ export default function SocialIcons({ footer=false } :
           </svg>
         </span>
       </a>
-      <a href='https://twitter.com/ContactPandora' target='_blank' className="px-1">
+
+      <a aria-label="Twitter" href='https://twitter.com/ContactPandora' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ export default function SocialIcons({ footer=false } :
         </span>
       </a>
 
-      <a href='https://www.linkedin.com/in/renee-burwell-lcsw-cst-2926126/' target='_blank' className={`px-1 ${!footer && 'hidden'}`} >
+      <a aria-label="LinkedIn" href='https://www.linkedin.com/in/renee-burwell-lcsw-cst-2926126/' target='_blank' className={`px-1 ${!footer && 'hidden'}`} >
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +46,8 @@ export default function SocialIcons({ footer=false } :
           </svg>
         </span>
       </a>
-      <a href='https://pin.it/bfbcenqxwb3amq' target='_blank' className="px-1">
+
+      <a aria-label="Pinterest" href='https://pin.it/bfbcenqxwb3amq' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +59,8 @@ export default function SocialIcons({ footer=false } :
           </svg>
         </span>
       </a>
-      <a href='https://www.youtube.com/channel/UCB1AH9NZvC4F7p-c1Ej_X3Q?view_as=subscriber' target='_blank' className="px-1">
+
+      <a aria-label="YouTube" href='https://www.youtube.com/channel/UCB1AH9NZvC4F7p-c1Ej_X3Q?view_as=subscriber' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +72,8 @@ export default function SocialIcons({ footer=false } :
           </svg>
         </span>
       </a>
-      <a href='https://www.instagram.com/pandoras_awakening' target='_blank' className="px-1">
+
+      <a aria-label="Instagram" href='https://www.instagram.com/pandoras_awakening' target='_blank' className="px-1">
         <span className="[&>svg]:h-3 [&>svg]:w-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
