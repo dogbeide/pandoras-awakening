@@ -184,6 +184,12 @@ export default function Page() {
         <Title classNames={`text-pandoras-purple`} textSizes="text-4xl">
           Featured on premium outlets:
         </Title>
+        <Image
+          src='/news-outlets_360x165.png'
+          alt='featured news outlets image list'
+          width={360}
+          height={165}
+        />
       </Section>
     </div>
   )
