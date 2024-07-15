@@ -56,7 +56,7 @@ export default function Home() {
             Certified Sex Therapist and Educator
           `}
         />
-        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-pandoras-purple" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
+        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
       </Section>
