@@ -10,14 +10,14 @@ export default function Title({ href, classNames, children } : {
   return (
     <div className="text-center">
       {href ?
-        <a className={`inline-block ${squarePeg.className} ${href ? 'btn-cta-text' : ''} 
+        <a className={`inline-block ${squarePeg.className} 'btn-cta-text' 
                       ${classNames}
                       text-center max-md:text-5xl text-6xl mb-5 max-sm:mb-6`}
           href={href}
         >
           {children}
         </a> :
-        <span className={`inline-block ${squarePeg.className} ${href ? 'btn-cta-text' : ''} 
+        <span className={`inline-block ${squarePeg.className}  
                 ${classNames}
                 text-center max-md:text-5xl text-6xl mb-5 max-sm:mb-6`}
         >
