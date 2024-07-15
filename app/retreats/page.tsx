@@ -2,8 +2,9 @@ import Image from "next/image";
 
 import Title from "../components/text/Title";
 import Section from "../components/general/Section";
-import { justAnotherHand } from "../lib/fonts";
+import { dancingScript, justAnotherHand } from "../lib/fonts";
 import RetreatActivityCard from "./RetreatActivityCard";
+import RetreatOptionCard from "./RetreatOptionCard";
 
 
 export default function Page() {
@@ -122,6 +123,64 @@ export default function Page() {
           </p>
           <br />
         </div>
+      </Section>
+
+      <Section classNames="bg-pandoras-purple">
+        <Title classNames="text-white">Retreat Options</Title>
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-2 max-md:gap-4 max-sm:gap-2 mx-2 w-full text-center text-white"
+        >
+          <RetreatOptionCard
+            title="Individual Getaway"
+            desc={<div className="flex flex-col items-left text-center">
+              <span className="font-semibold">5-Day Retreat - Nashville</span><br />
+              <ul className="list-disc text-left">
+                <li>Lodging</li>
+                <li>Meals</li>
+                <li>Transportation (within retreat)</li>
+              </ul>
+              <br />
+              <ul className="list-disc text-left">
+                <li>Daily Yoga</li>
+                <li>Group Processing</li>
+                <li>Activities</li>
+              </ul>
+              <br />
+              <div className="italic">$1,250 / person</div><br />
+            </div>}
+          />
+          <RetreatOptionCard
+            title="Couples Retreat"
+            desc={<div className="flex flex-col items-left text-center">
+              <span className="font-semibold">5-Day Retreat - Nashville</span><br />
+              <ul className="list-disc text-left">
+                <li>Lodging</li>
+                <li>Meals</li>
+                <li>Transportation (within retreat)</li>
+              </ul>
+              <br />
+              <ul className="list-disc text-left">
+                <li>Daily Yoga</li>
+                <li>Group Processing</li>
+                <li>Activities</li>
+              </ul>
+              <br />
+              <div className="italic">$2600 / couple</div><br />
+            </div>}
+          />
+        </div>
+        <div className="mt-3 text-center">
+          <span className="italic">(Outside transportation & activities not included)</span>
+        </div>
+      </Section>
+      
+      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
+        <Title classNames="text-pandoras-purple">Upcoming Dates</Title>
+      </Section>
+
+      <Section classNames="bg-pandoras-purple">
+        <Title classNames={`text-white`} textSizes="text-4xl">
+          Featured on premium outlets:
+        </Title>
       </Section>
     </div>
   )

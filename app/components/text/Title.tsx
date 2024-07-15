@@ -1,8 +1,9 @@
 import { squarePeg } from "@/app/lib/fonts"
 
-export default function Title({ href, classNames, children } : { 
+export default function Title({ href, classNames, textSizes, children } : { 
   href?: string,
   classNames?: string,
+  textSizes?: string,
   children: React.ReactNode,
 }) {
 
@@ -11,15 +12,15 @@ export default function Title({ href, classNames, children } : {
     <div className="text-center">
       {href ?
         <a className={`inline-block ${squarePeg.className} 'btn-cta-text' 
-                      ${classNames}
-                      text-center max-md:text-5xl text-6xl mb-5 max-sm:mb-6`}
+                      ${classNames} mb-5 max-sm:mb-6
+                      text-center ${textSizes || 'text-6xl max-md:text-5xl'}`}
           href={href}
         >
           {children}
         </a> :
-        <span className={`inline-block ${squarePeg.className}  
-                ${classNames}
-                text-center max-md:text-5xl text-6xl mb-5 max-sm:mb-6`}
+        <span className={`inline-block ${squarePeg.className} 'btn-cta-text' 
+                      ${classNames} mb-5 max-sm:mb-6
+                      text-center ${textSizes || 'text-6xl max-md:text-5xl'}`}
         >
           {children}
         </span> 

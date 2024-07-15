@@ -49,7 +49,7 @@ export default function FaqItem({ key, faq } : {
         >
           {faq.a.map((a, idx) => {
 
-            return <span key={idx}>{
+            return <div key={idx}>{
               Array.isArray(a) ?
                 <ul className="list-disc ml-8">
                   {a.map((li, idx) => (
@@ -59,7 +59,7 @@ export default function FaqItem({ key, faq } : {
                 a
             }
               <br/><br/>
-            </span>
+            </div>
           })}
         </div>}
 
