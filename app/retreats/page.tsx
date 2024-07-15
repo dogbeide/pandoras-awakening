@@ -146,6 +146,7 @@ export default function Page() {
                 <li>Activities</li>
               </ul>
               <br />
+              <div className="italic font-semibold">May 11 - 15</div><br />
               <div className="italic">$1,250 / person</div><br />
             </div>}
           />
@@ -165,6 +166,7 @@ export default function Page() {
                 <li>Activities</li>
               </ul>
               <br />
+              <div className="italic font-semibold">April 20 - 24</div><br />
               <div className="italic">$2600 / couple</div><br />
             </div>}
           />
@@ -173,13 +175,13 @@ export default function Page() {
           <span className="italic">(Outside transportation & activities not included)</span>
         </div>
       </Section>
-      
+{/*       
       <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
         <Title classNames="text-pandoras-purple">Upcoming Dates</Title>
-      </Section>
+      </Section> */}
 
-      <Section classNames="bg-pandoras-purple">
-        <Title classNames={`text-white`} textSizes="text-4xl">
+      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
+        <Title classNames={`text-pandoras-purple`} textSizes="text-4xl">
           Featured on premium outlets:
         </Title>
       </Section>
