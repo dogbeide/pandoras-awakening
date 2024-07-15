@@ -27,7 +27,7 @@ export default function Page() {
 
           <p className="italic">
             Led by nationally-acclaimed sex therapist&nbsp;
-            <a className="underline hover:text-pandoras-orange transition-all duration-100" href="/about-us/renee-burwell">Renee Burwell</a>.
+            <a className="underline hover:text-pandoras-orange transition-all duration-150" href="/about-us/renee-burwell">Renee Burwell</a>.
           </p>
           <br />
 
@@ -42,6 +42,7 @@ export default function Page() {
           <br />
         </div>
       </Section>
+
       <div className="bg-pandoras-purple 
         grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[420px]:grid-cols-1 max-md:gap-1 max-md:py-1"
       >
@@ -80,11 +81,48 @@ export default function Page() {
           color='pandoras-lime'
         />
       </div>
-      {/* <Section classNames="bg-pandoras-purple">
-        <Title classNames={`text-2xl text-white ${justAnotherHand.className}`}>
-          REJUVENATION - FUN - SELF-CARE
+
+      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
+        <Title classNames={`text-2xl text-black}`}>
+          My Approach
         </Title>
-      </Section> */}
+        <div className="text-pandoras-purple max-sm:text-sm flex flex-col items-center">
+          <p className="font-semibold">
+            We welcome all couples and individuals <br/> from different stages of their relationships:
+          </p>
+          <br />
+          
+          <div className="font-semibold flex flex-row justify-center">
+            <ul className="list-disc text-left">
+              <li>beginning of the relationship</li>
+              <li>trying to keep the fire burning</li>
+              <li>on the verge of breakup</li>
+            </ul>
+          </div>
+          <br />
+
+          <p className="font-semibold italic">
+            All sessions are focused on making a connection <br/>
+            and being unapologetically authentic.
+          </p>
+          <br />
+
+          <Image
+            src="/Renee-glasses-frizzy_334x334.jpg"
+            alt="Renee-glasses-frizzy"
+            width={150}
+            height={150}
+            className="rounded-full btn-cta-img hover-orange mb-5"
+          />
+
+          <p className="">
+            <a className="underline hover:text-pandoras-orange transition-all duration-150" href="/about-us/renee-burwell">
+              Learn more about Renee...
+            </a>
+          </p>
+          <br />
+        </div>
+      </Section>
     </div>
   )
 }

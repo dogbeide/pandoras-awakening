@@ -15,6 +15,7 @@
 
 .btn-cta-img {
   transition: all ease 0.2s;
+  cursor: pointer
 }
 
 .btn-cta-img.hover-teal:hover {
