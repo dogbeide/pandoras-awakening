@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://pandoras-awakening.vercel.app
+
+# Sitemaps
+Sitemap: http://pandoras-awakening.vercel.app/sitemap.xml
