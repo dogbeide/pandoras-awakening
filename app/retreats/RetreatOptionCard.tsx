@@ -2,11 +2,9 @@ import { justAnotherHand } from "../lib/fonts"
 
 export default function RetreatOptionCard({
   title,
-  // desc,
   desc,
 } : {
   title: string,
-  // desc?: Array<string | Array<string>>,
   desc?: React.ReactNode,
 }) {
 

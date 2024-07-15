@@ -2,9 +2,10 @@ import Image from "next/image";
 
 import Title from "../components/text/Title";
 import Section from "../components/general/Section";
-import { dancingScript, justAnotherHand } from "../lib/fonts";
 import RetreatActivityCard from "./RetreatActivityCard";
 import RetreatOptionCard from "./RetreatOptionCard";
+
+import '@/app/components/buttons/btn-cta.css'
 
 
 export default function Page() {
