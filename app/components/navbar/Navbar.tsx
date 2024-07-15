@@ -66,7 +66,7 @@ export default function Navbar() {
         <div className='ml-9 max-md:ml-0'>
           <SocialIcons />
         </div>
-        <BtnCTA classNames="max-md:hidden mt-4 px-2 mr-6" href="https://calendly.com/holisticsextherapist" target="_blank">
+        <BtnCTA ariaLabel="Schedule Appointment" classNames="max-md:hidden mt-4 px-2 mr-6" href="https://calendly.com/holisticsextherapist" target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
       </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className={`nav-items flex flex-row justify-end items-center pl-1 pr-4 ${squarePeg.className} max-md:flex hidden`}>
-          <BtnCTA classNames="hidden max-md:block my-2 px-2 mr-5" href="https://calendly.com/holisticsextherapist" 
+          <BtnCTA ariaLabel='Schedule Appointment' classNames="hidden max-md:block my-2 px-2 mr-5" href="https://calendly.com/holisticsextherapist" 
           target="_blank" fontSize='14px' >
             SCHEDULE APPOINTMENT
           </BtnCTA>

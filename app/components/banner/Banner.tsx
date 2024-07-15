@@ -18,7 +18,7 @@ export default function Banner() {
       <div className={`${styles['vignette']} z-10`}></div>
       <div className={`${dancingScript.className} z-20 text-2xl absolute top-0 flex flex-col justify-center items-center text-center text-white w-full h-full `}>
         <span className={`${styles['text-shadow']}`}>Find the Hope You&apos;re Looking For</span>
-        <BtnCTA classNames="px-2 mt-4 mr-6" href="https://calendly.com/holisticsextherapist" target="_blank">
+        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 mr-6" href="https://calendly.com/holisticsextherapist" target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
         
