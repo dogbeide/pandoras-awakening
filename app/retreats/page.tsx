@@ -179,9 +179,127 @@ export default function Page() {
       <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
         <Title classNames="text-pandoras-purple">Upcoming Dates</Title>
       </Section> */}
-
       <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
-        <Title classNames={`text-pandoras-purple`} textSizes="text-4xl">
+        <Title>Our Space</Title>
+
+        <div className="text-pandoras-purple">
+          <p className="font-bold italic">
+            Spacious manor. <br />
+            Recently upgraded. <br />
+            Fully furnished, throughout.
+          </p>
+
+          <hr className="bg-pandoras-purple my-4" />
+
+          <p className="font-semibold mb-2">Fully equipped kitchen w/ appliances, including:</p>
+          <p className="italic">
+            Stove <br />
+            Oven <br />
+            Refrigerator <br />
+            Dishwasher <br />
+            Microwave
+          </p>
+          <br />
+          <p className="font-semibold mb-2">Bedrooms furnished with:</p>
+          <p className="italic">
+            New crisp linens <br /> 
+            Pillows <br />
+            Bed coverings
+          </p>
+          <br />
+        </div>
+
+        <div className="grid grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1 my-5">
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-1.webp"
+              alt="accomodation-house"
+              height={226}
+              width={226}
+            />
+          </div>
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-2.webp"
+              alt="accomodation-kitchen"
+              height={226}
+              width={226}
+            />
+          </div>
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-3.webp"
+              alt="accomodation-bed"
+              height={226}
+              width={226}
+            />
+          </div>
+        </div>
+
+        <div className="text-pandoras-purple">
+          <p className="font-semibold mb-2">Amenities include:</p>
+          <p className="italic mb-2">
+            Gazebo with bench seating <br />
+            Free onsite parking <br />
+            Cable HDTV <br />
+            High-speed WiFi <br />
+            Keyless access
+          </p>
+          <p className="font-semibold mb-2">Additional space in the basement (games room):</p>
+          <p className="italic">
+            Queen-sized sleeper sofa. <br />
+            Ping pong, darts, air hockey, foosball, (& more...)<br />
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1 my-3">
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-4.webp"
+              alt="accomodation-living-room-side"
+              height={226}
+              width={226}
+            />
+          </div>
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-5.webp"
+              alt="accomodation-living-room-back"
+              height={226}
+              width={226}
+            />
+          </div>
+          <div className="col-span-1">
+            <Image
+              src="/accomodation-6.webp"
+              alt="accomodation-gazebo"
+              height={226}
+              width={226}
+            />
+          </div>
+        </div>
+
+        <div className="text-pandoras-purple mt-3">
+          <p className="font-bold mb-2">Located near Downtown Columbia.</p>
+          <p className="font-bold mb-2">Enjoy the very best of Columbia just 45 minutes south of Nashville!</p>
+          {/* <br /> */}
+          <p>Explore all of the cafés, bars, 
+            restaurants & outdoor activities that make this vibrant city so unique.</p>
+          <br />
+          <p className="font-semibold mb-2">Visit:</p>
+          {/* <br /> */}
+          <p className="italic">Main St, <br />Arts District, <br />Town Square,<br /> Chickasaw Trace Park,<br /> Bleu 32 <br /> (& more...)</p>
+          <br />
+        </div>
+      </Section>
+
+      {/* <Section classNames="bg-pandoras-purple">
+        <Title classNames="text-slate-200">Stay-Safe Protocols</Title>
+        <div></div>
+      </Section> */}
+
+      <Section classNames="bg-pandoras-purple">
+        <Title classNames={`text-slate-200`} textSizes="text-4xl">
           Featured on premium outlets:
         </Title>
         <Image
