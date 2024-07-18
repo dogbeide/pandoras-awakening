@@ -15,9 +15,10 @@ const offerings = [
   },
   {
     title: 'Psychedelic-Assisted Therapy',
-    desc: ``,
+    desc: `A therapeutic approach that incorporates the use of psychedelic substances 
+          under controlled conditions, guided by trained facilitators, to enhance the therapeutic process.`,
     href: '/offerings/psychedelic-assisted-therapy',
-    imgUrl: ''
+    imgUrl: '/pexels-mccutcheon-1212408_150x150.jpg'
   },
   {
     title: 'Therapy for People of Color',
