@@ -3,6 +3,7 @@ import { montserrat } from "./lib/fonts";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
+import SubscribeModal from "./components/modals/SubscribeModal";
 
 export const metadata: Metadata = {
   title: "Home - Pandora's Awakening",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <SubscribeModal />
       </body>
     </html>
   );

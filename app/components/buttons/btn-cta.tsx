@@ -1,16 +1,26 @@
 import { justAnotherHand } from '@/app/lib/fonts';
+import { ButtonHTMLAttributes } from 'react';
 
-// import './btn-cta.css'
+import './btn-cta.css'
 
 type btnCTATypes = {
   classNames?: string,
 }
 
-export default function BtnCTA({ classNames, href, target="_self", fontSize='18px', ariaLabel, children } : {
+export default function BtnCTA({
+  classNames,
+  href,
+  target="_self",
+  fontSize='18px',
+  type='button',
+  ariaLabel,
+  children
+} : {
   classNames?: string,
   href?: string,
   target?: string,
   fontSize?: string,
+  type?: "button" | "submit" | "reset" | undefined,
   ariaLabel?: string,
   children: React.ReactNode
 }) {
@@ -19,6 +29,7 @@ export default function BtnCTA({ classNames, href, target="_self", fontSize='18p
       <button 
         className={`btn-cta px-2 text-nowrap ${justAnotherHand.className} ${classNames}`}
         style={{fontSize: fontSize}}
+        type={type}
       >
         {children}
       </button>
