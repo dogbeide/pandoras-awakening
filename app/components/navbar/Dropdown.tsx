@@ -41,6 +41,7 @@ export default function Dropdown(props: Props) {
           ))}
         </div>
       </div>
+      <div className={`fixed top-0 w-full h-full z-[60] ${transClass}` } onClick={toggle}></div>
     </>
   );
 }
