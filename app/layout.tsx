@@ -3,6 +3,7 @@ import { montserrat } from "./lib/fonts";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
+import SubFooter from './components/footer/SubFooter';
 import SubscribeModal from "./components/modals/SubscribeModal";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <SubFooter />
         <SubscribeModal />
       </body>
     </html>
