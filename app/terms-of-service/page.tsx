@@ -7,18 +7,18 @@ export default function Page() {
   return (
     <div className="bg-pandoras-purple py-6 px-6">
       <Title classNames="text-white">Terms of Service</Title>
-      <hr className="bg-pandoras-orange h-1 border-none mx-20" />
+      <hr className="bg-pandoras-orange h-1 border-none mx-11" />
 
       <Section classNames="text-slate-200">
         <div className="text-left">
           <p className="font-bold mb-6">Last updated: May 28, 2021</p>
-          <p className="mb-4">Please read these Terms of Use (“Terms”, “Terms of Use”) carefully before using the <a className="underline text-pandoras-teal hover:text-pandoras-lime" href="https://pandorasawakening.com/">https://pandorasawakening.com/</a>  website (the “Service”) operated by Pandora's Awakening.</p>
+          <p className="mb-4">Please read these Terms of Use (“Terms”, “Terms of Use”) carefully before using the <a className="underline text-pandoras-teal hover:text-pandoras-lime" href="https://pandorasawakening.com/">https://pandorasawakening.com/</a>  website (the “Service”) operated by Pandora&apos;s Awakening.</p>
           <p className="mb-4">Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
           <p className="mb-4">By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
 
           <h2 className={`${justAnotherHand.className} text-4xl mb-3 mt-2 tracking-wide`}>Links To Other Web Sites</h2>
-          <p className="mb-4">Our Service may contain links to third-party web sites or services that are not owned or controlled by Pandora's Awakening.</p>
-          <p className="mb-4">Pandora's Awakening has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Pandora's Awakening shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+          <p className="mb-4">Our Service may contain links to third-party web sites or services that are not owned or controlled by Pandora&apos;s Awakening.</p>
+          <p className="mb-4">Pandora&apos;s Awakening has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Pandora&apos;s Awakening shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
           <p className="mb-4">We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
 
           <h2 className={`${justAnotherHand.className} text-4xl mb-3 mt-2 tracking-wide`}>Termination</h2>
