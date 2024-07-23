@@ -1,4 +1,4 @@
-const offerings = [
+export const offeringsPreview = [
   {
     title: 'Sex Therapy',
     desc: `If you are struggling with issues of sexual intimacy or desire, 
@@ -79,4 +79,9 @@ const offerings = [
   
 ];
 
-export default offerings;
+export const offeringsDetail = {
+  'sex-therapy': {
+    title: 'Sex Therapy',
+    question: 'Have You Come Up Against Obstacles To A Fulfilling Sex Life?',
+  }
+}
