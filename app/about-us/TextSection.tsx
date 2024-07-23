@@ -6,7 +6,7 @@ export default function TextSection({ children, classNames } : {
 }) {
 
   return(
-    <span className={`${classNames} text-slate-200 mt-5`}>
+    <span className={`${classNames} text-slate-200 text-sm mt-5`}>
       {children}
     </span>
   )

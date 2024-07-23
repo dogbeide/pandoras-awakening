@@ -70,7 +70,7 @@ export default function Page() {
 
         <SubTitle classNames="mt-12">Services Include:</SubTitle>
         <TextSection>
-          <ul className="list-disc text-left">
+          <ul className="list-disc text-left text-sm">
             <li>Individual/Couples/Family/Group therapy</li>
             <li>Sex Therapy</li>
             <li>Psychoeducational Workshops & Trainings</li>
@@ -102,13 +102,13 @@ export default function Page() {
         <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
-        <span className={`text-center text-pandoras-purple mt-6`}>
+        <span className={`text-center text-pandoras-purple mt-6 text-sm italic`}>
           &quot;I live by the philosophy that everyone on this earth plays a vital part 
           in the success and failures of their community, and I prefer to play on the side of success. 
           Analyzing and learning functions of relationships has always been a great passion of mine. 
           I believe relationships are the driving force behind our existence.&quot;
         </span>
-        <span className="text-center max-md:text-left text-pandoras-purple mt-5 max-md:mt-3 font-semibold text-sm max-sm:text-xs">
+        <span className="text-center max-md:text-left text-pandoras-purple mt-6 font-semibold text-sm max-sm:text-xs">
         🥇 2021 - American Association of Sexuality Educators, Counselors, 
           and Therapists Award for Integrative Approaches to Sex Therapy
         </span>
