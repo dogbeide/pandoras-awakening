@@ -115,6 +115,11 @@ export default function Page() {
         <span className="text-center max-md:text-left text-pandoras-purple mt-3 font-semibold text-sm max-sm:text-xs">
         🥇 2018 - Family Life Educator Award Winner from Planned Parenthood of Tennessee and North Mississippi
         </span>
+        <a className="text-pandoras-orange hover:text-pandoras-light-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
+          href={'/about-us/renee-burwell'}
+        >
+          (More about Renee...)
+        </a>
       </Section>
 
     </div>
