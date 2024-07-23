@@ -23,7 +23,6 @@ export default function SubscribeModal() {
     <div className={`top-0 z-50 bg-slate-200 bg-opacity-80 w-full h-full 
                     flex justify-center items-center
                     ${modalIsOpen ? 'fixed' : 'hidden'}`}
-        onClick={handleCloseModal}
     >
       {/* <div className="relative max-w-[818px] "> */}
         <div className="grid grid-cols-2 max-md:grid-cols-1 grid-flow-row max-w-[818px] max-md:h-[70%] max-md:overflow-scroll">
@@ -48,7 +47,9 @@ export default function SubscribeModal() {
 
           <div className="relative col-span-1 max-w-[409px]">
             <span className={`absolute top-0 right-0 py-4 px-5 text-6xl
-                          hover:text-white transition-all duration-150 cursor-pointer`}>
+                          hover:text-white transition-all duration-150 cursor-pointer`}
+                  onClick={handleCloseModal}
+            >
               X
             </span>
             <Image
