@@ -42,7 +42,7 @@ export default function Home() {
           <p className="mt-3">We accept insurance and have affordable packages to help you access care. </p>
           <p className="mt-3">We also offer in-person and virtual therapy to best fit your needs.!</p>
         </span>
-        <BtnCTA ariaLabel="About Us" classNames='text-white mt-4' href='/about' fontSize="22px">ABOUT US</BtnCTA>
+        <BtnCTA ariaLabel="About Us" classNames='text-white mt-4' href='/about-us' fontSize="22px">ABOUT US</BtnCTA>
       </Section>
 
       <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
