@@ -7,7 +7,7 @@ export default function TextSection({ children, textColor, classNames } : {
 }) {
 
   return(
-    <span className={`${classNames} ${'text-' + textColor || 'text-slate-200'} text-sm mt-5`}>
+    <span className={`${classNames} ${textColor ? 'text-' + textColor : 'text-slate-200'} text-sm mt-5`}>
       {children}
     </span>
   )
