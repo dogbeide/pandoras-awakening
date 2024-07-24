@@ -34,10 +34,6 @@ const menuItems: MenuItem[] = [
         route: "/retreats",
       },
       {
-        title: "Events",
-        route: "/events",
-      },
-      {
         title: "FAQ",
         route: "/faq",
       },
@@ -81,7 +77,7 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.route || '/'}
-              className='hover:text-blue-600 px-2 py-4'
+              className='hover:text-blue-600 px-2 py-4 text-3xl max-lg:text-2xl'
             >
               {item.title}
             </Link>

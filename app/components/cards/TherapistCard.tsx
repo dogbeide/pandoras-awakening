@@ -29,7 +29,7 @@ export default function TherapistCard({ name, href, imgUrl, alt, desc } : {
         {name}
       </a>
       {/* <hr className="bg-pandoras-purple h-1 my-3 w-full" /> */}
-      <span className="text-base text-center text-pandoras-purple py-3 max-w-56">
+      <span className="text-base text-center text-pandoras-purple py-3 max-w-56 italic">
         {desc}
       </span>
     </div>
