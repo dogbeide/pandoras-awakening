@@ -63,7 +63,6 @@ export default function Home() {
           </BtnCTA>
         </Section>
 
-<<<<<<< HEAD
       <Section classNames="bg-pandoras-purple">
         <Title classNames="text-slate-100 hover:text-pandoras-teal" href='/offerings'>Offerings</Title>
         <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
@@ -83,27 +82,6 @@ export default function Home() {
           (See All Offerings...)
         </a>
       </Section>
-=======
-        <Section classNames="bg-pandoras-purple">
-          <Title classNames="text-slate-100 hover:text-pandoras-teal" href='/offerings'>Offerings</Title>
-          <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
-            {offerings.slice(0, 4).map((offering) => (
-              <OfferingCard
-                key={offering.title}
-                title={offering.title}
-                desc={offering.desc}
-                href={offering.href}
-                imgUrl={offering.imgUrl}
-              />
-            ))}
-          </div>
-          <a className="text-pandoras-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
-            href={'/offerings'}
-          >
-            (See All Offerings...)
-          </a>
-        </Section>
->>>>>>> dev
 
       </main>
       <SubscribeModal />
