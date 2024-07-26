@@ -1,4 +1,4 @@
-import { badScript } from "../lib/fonts"
+import { badScript } from "@/app/lib/fonts"
 
 export default function SubTitle({ children, textColor, classNames } : {
   children: React.ReactNode,

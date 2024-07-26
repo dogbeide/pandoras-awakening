@@ -1,8 +1,8 @@
 import { squarePeg } from "../lib/fonts";
 import Section from "../components/general/Section";
 import Title from "../components/text/Title";
-import SubTitle from "./SubTitle";
-import TextSection from "./TextSection";
+import SubTitle from "../components/general/SubTitle";
+import TextSection from "../components/general/TextSection";
 import TherapistCard from "../components/cards/TherapistCard";
 import BtnCTA from "../components/buttons/btn-cta";
 

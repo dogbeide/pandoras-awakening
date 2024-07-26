@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Section from "@/app/components/general/Section";
 import Title from "@/app/components/text/Title";
-import SubTitle from "../SubTitle";
-import TextSection from "../TextSection";
+import SubTitle from "@/app/components/general/SubTitle";
+import TextSection from "@/app/components/general/TextSection";
 import TherapistCard from "@/app/components/cards/TherapistCard";
 import BtnCTA from "@/app/components/buttons/btn-cta";
 import { notFound } from "next/navigation";
