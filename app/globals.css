@@ -6,9 +6,17 @@
   --pandoras-purple: #461774;
   --pandoras-orange: #ff8623;
   --pandoras-light-orange: #ff8623;
-  --pandoras-teal: #62e796;
+
+  --pandoras-teal: #62e796; /*TODO: (replace w/ lavender or something else */
+  --pandoras-lavender: #c13efd;
+
   --pandoras-lime: #92ff03;
   --pandoras-pink: #e91e63;
+  --pandoras-light-pink: #ff4684;
+
+  --pandoras-jasper: #c94815;
+  --pandoras-fuchsia: #80186e;
+
 }
 
 /* :root {
