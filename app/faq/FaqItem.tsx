@@ -27,7 +27,7 @@ export default function FaqItem({ key, faq } : {
       className="w-full px-3 flex flex-col items-center"
     >
       <div className={`flex flex-col items-center mb-5 max-md:mb-3 mx-3 w-[50%] max-sm:w-[100%] border-2 rounded-sm 
-                      bg-black bg-opacity-10 border-white hover:border-pandoras-teal transition-all duration-200`}
+                      bg-black bg-opacity-10 border-white hover:border-pandoras-jasper-50 transition-all duration-200`}
       >
         <div
           onClick={toggleExpanded}
@@ -36,12 +36,12 @@ export default function FaqItem({ key, faq } : {
         >
           <div className="spacer col-span-1"></div>
           <button
-            className={`col-span-10 btn-cta-text hover:text-pandoras-teal  
+            className={`col-span-10 btn-cta-text hover:text-pandoras-orange  
                         px-2 py-2 max-md:py-1`}
           >
             {faq.q}
           </button>
-          <div className="col-span-1 btn-cta-text hover:text-pandoras-teal text-4xl max-md:text-3xl">{expanded ? '-' : '+'}</div>
+          <div className="col-span-1 btn-cta-text hover:text-pandoras-orange text-4xl max-md:text-3xl">{expanded ? '-' : '+'}</div>
         </div>
 
         {<div 
