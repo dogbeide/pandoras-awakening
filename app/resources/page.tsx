@@ -8,7 +8,7 @@ export default function Page() {
 
   return (
     <div>
-      <Section id="resources" classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section id="resources" classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
         <Title>Resources</Title>
         <div className="grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[500px]:grid-cols-1 max gap-x-2 gap-y-3 [&>div]:col-span-1">
           {resources.map((resource, idx) => (
@@ -33,7 +33,7 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section id="books" classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section id="books" classNames="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
         <Title classNames="">Books</Title>
         <div className="grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[500px]:grid-cols-1 max gap-x-2 gap-y-3 [&>div]:col-span-1">
           {books.map((book, idx) => (
