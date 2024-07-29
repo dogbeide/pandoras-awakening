@@ -6,7 +6,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-white via-pandoras-teal to-white flex flex-col items-center pb-6">
+      <div className="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white flex flex-col items-center pb-6">
         <Title classNames="mt-3">Contact</Title>
 
         <div className="flex flex-col items-center w-[500px] max-sm:w-full px-7">
