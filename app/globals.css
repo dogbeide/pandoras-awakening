@@ -9,12 +9,14 @@
 
   --pandoras-teal: #62e796; /*TODO: (replace w/ lavender or something else */
   --pandoras-lavender: #c13efd;
+  --pandoras-lavender-50: rgba(193, 62, 253, 0.5);
 
   --pandoras-lime: #92ff03;
   --pandoras-pink: #e91e63;
   --pandoras-light-pink: #ff4684;
 
   --pandoras-jasper: #c94815;
+  --pandoras-jasper-50: rgba(201, 72, 21, 0.5);
   --pandoras-fuchsia: #80186e;
 
 }

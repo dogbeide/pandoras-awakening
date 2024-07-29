@@ -1,7 +1,7 @@
 export default function SubFooter() {
 
   return (
-    <div className="bg-gradient-to-br from-white via-pandoras-teal to-white py-3 text-center text-sm max-sm:text-xs">
+    <div className="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white py-3 text-center text-sm max-sm:text-xs">
       <span>© {new Date().getFullYear()} Pandora&apos;s Awakening</span>
       <span>&nbsp;|&nbsp;</span>
       <a href='/privacy-policy' className="underline hover:text-pandoras-orange">Privacy Policy</a>
