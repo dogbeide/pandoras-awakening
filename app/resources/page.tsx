@@ -14,25 +14,41 @@ import './resources.css'
 
 export default function Page() {
 
+  const [expandedResources, setExpandedResources] = useState(false);
+  const [expandedFriends, setExpandedFriends] = useState(false);
   const [expandedBooks, setExpandedBooks] = useState(false);
 
   return (
     <div>
       <Section id="resources" classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
-        <Title>Resources</Title>
-        <div className="resource-list grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[500px]:grid-cols-1 max gap-x-2 gap-y-3 [&>div]:col-span-1">
+        <div onClick={() => setExpandedResources(!expandedResources)}>
+          <Title classNames="btn-cta-text hover:text-pandoras-fuchsia hover:cursor-pointer align-middle">
+            Resources  
+            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-5xl align-middle">
+              &nbsp;({expandedResources ? '-' : '+'})
+            </span>
+          </Title>
+        </div>
+        <ResourceList expanded={expandedResources}>
           {resources.map((resource, idx) => (
             <ResourceItem
               key={idx}
               resource={resource}
             />
           ))}
-        </div>
+        </ResourceList>
       </Section>
 
       <Section id="friends" classNames="bg-gradient-to-tr from-pandoras-purple to-pandoras-pink">
-        <Title classNames="text-slate-200">Friends of Pandora&apos;s Awakening</Title>
-        <div className="resource-list grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[500px]:grid-cols-1 max gap-x-2 gap-y-3 [&>div]:col-span-1">
+        <div onClick={() => setExpandedFriends(!expandedFriends)}>
+          <Title classNames="btn-cta-text hover:text-pandoras-orange hover:cursor-pointer align-middle">
+          Friends of Pandora&apos;s Awakening  
+            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-5xl align-middle">
+              &nbsp;({expandedFriends ? '-' : '+'})
+            </span>
+          </Title>
+        </div>
+        <ResourceList expanded={expandedFriends}>
           {friends.map((resource, idx) => (
             <ResourceItem
               key={idx}
@@ -40,7 +56,7 @@ export default function Page() {
               textColor='slate-200'
             />
           ))}
-        </div>
+        </ResourceList>
       </Section>
 
       <Section id="books" classNames="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
