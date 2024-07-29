@@ -84,7 +84,7 @@ export default function Page() {
         />
       </div>
 
-      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
         <Title classNames={`text-2xl text-black}`}>
           My Approach
         </Title>
@@ -179,7 +179,7 @@ export default function Page() {
       <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
         <Title classNames="text-pandoras-purple">Upcoming Dates</Title>
       </Section> */}
-      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
         <Title>Our Space</Title>
 
         <div className="text-pandoras-purple">
