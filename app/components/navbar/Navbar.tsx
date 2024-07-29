@@ -56,7 +56,7 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='sticky top-0 z-40 bg-gradient-to-br from-white to-pandoras-jasper-50'>
+    <div id="navbar" className='sticky top-0 z-40 bg-gradient-to-br from-white-50 via-pandoras-jasper-70 to-pandoras-jasper-50'>
 
       <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-pandoras-jasper-50 to-transparent bg-opacity-20 px-2">
         <div className='ml-9 max-md:ml-0'>
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.route || '/'}
-              className='text-slate-800 hover:text-blue-600 px-2 py-4 text-3xl max-lg:text-2xl'
+              className='text-slate-200 hover:text-blue-600 px-2 py-4 text-3xl max-lg:text-2xl'
             >
               {item.title}
             </Link>

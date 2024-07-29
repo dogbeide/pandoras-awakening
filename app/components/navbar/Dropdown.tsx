@@ -23,7 +23,7 @@ export default function Dropdown(props: Props) {
   return (
     <>
       <div className="relative">
-        <button className="text-slate-800 hover:text-blue-600 font-bold" onClick={toggle}>
+        <button className="text-slate-200 hover:text-pandoras-fuchsia font-bold" onClick={toggle}>
           {item.title.toUpperCase() == 'MENU' ? item.title + ' ☰' : item.title}
         </button>
         <div
