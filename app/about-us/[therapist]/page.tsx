@@ -19,7 +19,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
   }
   return (
     <div>
-      <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
         <Title classNames="text-pandoras-purple">
           About Me
         </Title>
@@ -70,7 +70,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
         </TextSection>
       </Section>
 
-      <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section classNames="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
         <SubTitle textColor="black">
           Are you a healer looking for 
           guidance and clarity?
@@ -90,7 +90,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
           </span>
           <span>
             <a href="https://calendly.com/holisticsextherapist" 
-              className="underline text-pandoras-orange hover:text-pandoras-light-orange"
+              className="underline text-pandoras-jasper hover:text-pandoras-light-orange"
               target="_blank"
             >
               I am available for one-on-one sessions.

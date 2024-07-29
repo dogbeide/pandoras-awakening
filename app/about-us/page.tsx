@@ -88,7 +88,7 @@ export default function Page() {
         </BtnCTA>
       </Section>
 
-      <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+      <Section classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
         <Title classNames="text-pandoras-purple hover:text-pandoras-orange" href="/about-us/renee-burwell">Our Therapist</Title>
         <TherapistCard 
           name="Renee Burwell"
