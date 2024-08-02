@@ -77,8 +77,8 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.route || '/'}
-              className='text-pandoras-fuchsia hover:text-pandoras-orange px-2 py-4 text-xl max-lg:text-base'
-              style={{textShadow: 'white 0px 1px 1px'}}
+              className='text-pandoras-fuchsia hover:text-pandoras-orange px-2 py-4 text-lg max-lg:text-base max-[800px]:text-sm'
+              style={{textShadow: 'rgba(255, 255, 255, 0.5) 0px 1px'}}
             >
               {item.title}
             </Link>
