@@ -27,12 +27,12 @@ export default function Dropdown(props: Props) {
           {item.title.toUpperCase() == 'MENU' ? item.title + ' ☰' : item.title}
         </button>
         <div
-          className={`absolute top-8 -right-4 z-30 w-[100px] min-h-[300px] flex flex-col py-4 items-start bg-pandoras-jasper-50 rounded-md ${transClass}`}
+          className={`absolute top-8 -right-4 z-30 w-[100px] min-h-[300px] flex flex-col py-4 items-start bg-pandoras-orange-50 rounded-md ${transClass}`}
         >
           {menuItems.map((item: any) => (
             <Link
               key={item.route}
-              className="hover:bg-pandoras-lavender-50 text-slate-200 px-2 py-1 w-full text-sm"
+              className="hover:bg-pandoras-orange-50 text-slate-200 px-2 py-1 w-full text-sm"
               href={item?.route || ""}
               onClick={toggle}
             >
