@@ -5,6 +5,7 @@
 :root {
   --pandoras-purple: #461774;
   --pandoras-orange: #ff8623;
+  --pandoras-orange-50: rgba(255, 134, 35, 0.5);
   --pandoras-light-orange: #ff8623;
 
   --pandoras-teal: #62e796; /*TODO: (replace w/ lavender or something else */

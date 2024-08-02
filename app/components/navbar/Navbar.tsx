@@ -56,9 +56,9 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='sticky top-0 z-40 bg-gradient-to-r from-white-50 via-25% via-pandoras-jasper-50 to-pandoras-jasper-70'>
+    <div id="navbar" className='sticky top-0 z-40 bg-gradient-to-r from-white-50 via-25% via-white-50 to-pandoras-orange-50'>
 
-      <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-pandoras-jasper-50 to-transparent bg-opacity-20 px-2">
+      <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-pandoras-orange-50 to-transparent bg-opacity-20 px-2">
         <div className='ml-9 max-md:ml-0'>
           <SocialIcons />
         </div>
@@ -77,8 +77,8 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.route || '/'}
-              className='text-pandoras-fuchsia hover:text-pandoras-orange px-2 py-4 text-3xl max-lg:text-2xl'
-              style={{textShadow: 'white 1px 2px'}}
+              className='text-pandoras-fuchsia hover:text-pandoras-orange px-2 py-4 text-xl max-lg:text-base'
+              style={{textShadow: 'white 0px 1px 1px'}}
             >
               {item.title}
             </Link>

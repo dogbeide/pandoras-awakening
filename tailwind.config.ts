@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         "pandoras-purple": "var(--pandoras-purple)",
         "pandoras-orange": "var(--pandoras-orange)",
+        "pandoras-orange-50": "var(--pandoras-orange-50)",
         "pandoras-light-orange": "var(--pandoras-light-orange)",
         "pandoras-teal": "var(--pandoras-teal)",
         "pandoras-lime": "var(--pandoras-lime)",
