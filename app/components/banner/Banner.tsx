@@ -9,7 +9,7 @@ export default function Banner() {
   return (
     <div className={`${styles['banner-container']}`}>
       <Image
-        src="/group-hug_1276x852.jpg"
+        src="/pexels-tim-samuel-5838294_1200x800.jpg"
         alt="Pandora's Awakening banner"
         width={1349}
         height={400}
