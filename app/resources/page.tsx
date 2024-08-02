@@ -22,9 +22,9 @@ export default function Page() {
     <div>
       <Section id="resources" classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
         <div onClick={() => setExpandedResources(!expandedResources)}>
-          <Title classNames="btn-cta-text hover:text-pandoras-fuchsia hover:cursor-pointer align-middle">
+          <Title textSizes="text-3xl max-md:text-2xl max-sm:text-xl" classNames="btn-cta-text hover:text-pandoras-orange hover:cursor-pointer align-middle">
             Resources  
-            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-5xl align-middle">
+            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-3xl max-md:text-2xl max-sm:text-xl align-middle">
               &nbsp;({expandedResources ? '-' : '+'})
             </span>
           </Title>
@@ -41,9 +41,9 @@ export default function Page() {
 
       <Section id="friends" classNames="bg-gradient-to-tr from-pandoras-purple to-pandoras-pink">
         <div onClick={() => setExpandedFriends(!expandedFriends)}>
-          <Title classNames="btn-cta-text hover:text-pandoras-orange hover:cursor-pointer align-middle">
+          <Title textSizes="text-3xl max-md:text-2xl max-sm:text-xl" classNames="btn-cta-text hover:text-pandoras-orange hover:cursor-pointer align-middle">
           Friends of Pandora&apos;s Awakening  
-            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-5xl align-middle">
+            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-3xl max-md:text-2xl max-sm:text-xl align-middle">
               &nbsp;({expandedFriends ? '-' : '+'})
             </span>
           </Title>
@@ -61,8 +61,8 @@ export default function Page() {
 
       <Section id="books" classNames="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
         <div onClick={() => setExpandedBooks(!expandedBooks)}>
-          <Title classNames="btn-cta-text hover:text-pandoras-fuchsia hover:cursor-pointer align-middle">Books   
-            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-5xl align-middle">
+          <Title textSizes="text-3xl max-md:text-2xl max-sm:text-xl" classNames="btn-cta-text hover:text-pandoras-fuchsia hover:cursor-pointer align-middle">Books   
+            <span className="btn-cta-text hover:text-pandoras-orange font-bold text-3xl max-md:text-2xl max-sm:text-xl align-middle">
               &nbsp;({expandedBooks ? '-' : '+'})
             </span>
           </Title>

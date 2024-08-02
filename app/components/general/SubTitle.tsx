@@ -1,4 +1,4 @@
-import { badScript } from "@/app/lib/fonts"
+import { platypi } from "@/app/lib/fonts"
 
 export default function SubTitle({ children, textColor, classNames } : {
   children: React.ReactNode,
@@ -7,7 +7,7 @@ export default function SubTitle({ children, textColor, classNames } : {
 }) {
 
   return (
-    <span className={`${badScript.className} ${ textColor ? 'text-' + textColor : 'text-pandoras-orange'} text-2xl max-lg:text-xl max-md:text-lg ${classNames}`}>
+    <span className={`${platypi.className} ${ textColor ? 'text-' + textColor : 'text-pandoras-orange'} text-2xl max-lg:text-xl max-md:text-lg ${classNames}`}>
       {children}
     </span>
   )

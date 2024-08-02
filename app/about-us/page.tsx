@@ -11,8 +11,8 @@ export default function Page() {
   return (
     <div>
       <Section classNames="bg-gradient-to-tr from-pandoras-purple to-pandoras-pink text-center">
-        <span className={`max-md:text-5xl text-6xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
-        <SubTitle classNames="mt-4">
+        <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className}`}>Pandora’s Awakening</span>
+        <SubTitle classNames="mt-2">
           The premise of Pandora’s Awakening stems from the Greek myth of Pandora’s box.
         </SubTitle>
         <TextSection classNames="mt-5">
@@ -28,7 +28,7 @@ export default function Page() {
         </TextSection>
 
         <SubTitle classNames="mt-9">
-          Pandora’s Awakening, is about hope.
+          Pandora’s Awakening is about hope.
         </SubTitle>
         <TextSection>
           As human beings, we all will experience some form of crisis or change in our lives. 
@@ -115,7 +115,7 @@ export default function Page() {
         <span className="text-center max-md:text-left text-pandoras-purple mt-3 font-semibold text-sm max-sm:text-xs">
         🥇 2018 - Family Life Educator Award Winner from Planned Parenthood of Tennessee and North Mississippi
         </span>
-        <a className="text-pandoras-orange hover:text-pandoras-light-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
+        <a className="text-pandoras-orange hover:text-pandoras-orange-50 btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
           href={'/about-us/renee-burwell'}
         >
           (More about Renee...)

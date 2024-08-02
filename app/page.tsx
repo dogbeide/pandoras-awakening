@@ -19,7 +19,7 @@ export default function Home() {
         <Banner />
 
         <Section classNames="bg-gradient-to-tr from-pandoras-purple to-pink-500">
-          <span className={`max-md:text-5xl text-6xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
+          <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
           <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-300 ${montserrat.className}`}>
             <p className="mt-3">Are you going through a challenging time in your life?</p>
             <p className="mt-3">We greatly empathize with what you might be experiencing</p>

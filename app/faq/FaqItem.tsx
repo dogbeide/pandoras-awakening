@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { justAnotherHand } from '../lib/fonts'
+import { montserrat } from '../lib/fonts'
 
 import './faq-item.css'
 import '@/app/components/buttons/btn-cta.css'
@@ -31,8 +31,8 @@ export default function FaqItem({ key, faq } : {
       >
         <div
           onClick={toggleExpanded}
-          className={`grid grid-cols-12 w-full text-3xl max-md:text-2xl max-sm:text-xl tracking-wider text-slate-200 
-                      cursor-pointer ${justAnotherHand.className}`}
+          className={`grid grid-cols-12 w-full text-lg max-md:text-base max-sm:text-sm tracking-wider text-slate-200 
+                      cursor-pointer ${montserrat.className}`}
         >
           <div className="spacer col-span-1"></div>
           <button

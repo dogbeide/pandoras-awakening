@@ -7,20 +7,19 @@ export default function Title({ href, classNames, textSizes, children } : {
   children: React.ReactNode,
 }) {
 
-  const textTag = href ? `a` : `span`
   return (
     <div className="text-center">
       {href ?
         <a className={`inline-block ${squarePeg.className} 'btn-cta-text' 
                       ${classNames} mb-5 max-sm:mb-6
-                      text-center ${textSizes || 'text-6xl max-md:text-5xl'}`}
+                      text-center ${textSizes ? textSizes : 'text-4xl max-md:text-3xl'}`}
           href={href}
         >
           {children}
         </a> :
         <span className={`inline-block ${squarePeg.className} 'btn-cta-text' 
                       ${classNames} mb-5 max-sm:mb-6
-                      text-center ${textSizes || 'text-6xl max-md:text-5xl'}`}
+                      text-center ${textSizes ? textSizes : 'text-4xl max-md:text-3xl'}`}
         >
           {children}
         </span> 

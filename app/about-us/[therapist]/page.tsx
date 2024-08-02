@@ -53,7 +53,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
       </Section>
 
       <Section classNames="bg-gradient-to-tr from-pandoras-purple to-pandoras-pink">
-        <SubTitle>
+        <SubTitle classNames="text-center">
           Do you want to live a life with stronger connections to your creativity and sexuality?
         </SubTitle>
         <TextSection classNames="flex flex-col text-center items-center [&>span]:mb-2">
@@ -71,7 +71,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
       </Section>
 
       <Section classNames="bg-gradient-to-br from-white via-pandoras-jasper-50 to-white">
-        <SubTitle textColor="black">
+        <SubTitle textColor="black" classNames="text-center">
           Are you a healer looking for 
           guidance and clarity?
         </SubTitle>
