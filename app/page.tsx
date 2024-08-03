@@ -101,7 +101,7 @@ export default function Home() {
                 <input type="email" name="email" id="subscribe-email" className="px-1" />
               </div>
               <BtnCTA type="submit" classNames="text-white text-2xl mt-5 w-24">
-                Sign Up
+                SIGN UP
               </BtnCTA>
             </form>
           </GeneralSubscribe>
