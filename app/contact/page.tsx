@@ -1,6 +1,10 @@
 import Title from "../components/text/Title"
 import SubscribeModal from "../components/modals/SubscribeModal"
 import SocialIcons from "../components/navbar/SocialIcons"
+import GeneralSubscribe from "../components/modals/GeneralSubscribe"
+import BtnCTA from "../components/buttons/btn-cta"
+import Section from "../components/general/Section"
+import { squarePeg } from "../lib/fonts"
 
 export default function Page() {
 
@@ -56,8 +60,30 @@ export default function Page() {
 
         </div>
 
+        <Section classNames="">
+          <GeneralSubscribe
+            imgUrl="/pexels-tim-douglas-6205772_800x959.jpg"
+            imgAlt="open sesame message picture beautiful woman"
+          >
+            <div className={`${squarePeg.className} font-bold text-3xl pb-4`}>
+              Get the Latest News to Your Inbox!
+            </div>
+            <div>
+              Subscribe to our newsletter to receive news and updates.
+            </div>
+            <form action="" method="POST" className="mt-3 flex flex-col">
+              <div>
+                <label htmlFor="email" className="mr-2 font-bold">Email:</label>
+                <input type="email" name="email" id="subscribe-email" className="px-1" />
+              </div>
+              <BtnCTA type="submit" classNames="text-white text-2xl mt-5 w-24">
+                Sign Up
+              </BtnCTA>
+            </form>
+          </GeneralSubscribe>
+        </Section>
+
       </div>
-      <SubscribeModal />
     </>
   )
 }

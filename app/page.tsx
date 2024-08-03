@@ -11,6 +11,7 @@ import SubscribeModal from "./components/modals/SubscribeModal";
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
 import Title from "./components/text/Title";
+import GeneralSubscribe from "./components/modals/GeneralSubscribe";
 
 export default function Home() {
   return (
@@ -63,28 +64,49 @@ export default function Home() {
           </BtnCTA>
         </Section>
 
-      <Section classNames="bg-pandoras-purple">
-        <Title classNames="text-slate-100 hover:text-pandoras-teal" href='/offerings'>Offerings</Title>
-        <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
-          {offeringsPreview.slice(0, 4).map((offering) => (
-            <OfferingCard
-              key={offering.title}
-              title={offering.title}
-              desc={offering.desc}
-              href={offering.href}
-              imgUrl={offering.imgUrl}
-            />
-          ))}
-        </div>
-        <a className="text-pandoras-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
-          href={'/offerings'}
-        >
-          (See All Offerings...)
-        </a>
-      </Section>
+        <Section classNames="bg-pandoras-purple">
+          <Title classNames="text-slate-100 hover:text-pandoras-teal" href='/offerings'>Offerings</Title>
+          <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
+            {offeringsPreview.slice(0, 4).map((offering) => (
+              <OfferingCard
+                key={offering.title}
+                title={offering.title}
+                desc={offering.desc}
+                href={offering.href}
+                imgUrl={offering.imgUrl}
+              />
+            ))}
+          </div>
+          <a className="text-pandoras-orange btn-cta-text block text-center text-2xl mt-5 underline underline-offset-2"
+            href={'/offerings'}
+          >
+            (See All Offerings...)
+          </a>
+        </Section>
 
+        <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+          <GeneralSubscribe
+            imgUrl="/pexels-tim-douglas-6205772_800x959.jpg"
+            imgAlt="open sesame message picture beautiful woman"
+          >
+            <div className={`${squarePeg.className} font-bold text-3xl pb-4`}>
+              Get the Latest News to Your Inbox!
+            </div>
+            <div>
+              Subscribe to our newsletter to receive news and updates.
+            </div>
+            <form action="" method="POST" className="mt-3 flex flex-col">
+              <div>
+                <label htmlFor="email" className="mr-2 font-bold">Email:</label>
+                <input type="email" name="email" id="subscribe-email" className="px-1" />
+              </div>
+              <BtnCTA type="submit" classNames="text-white text-2xl mt-5 w-24">
+                Sign Up
+              </BtnCTA>
+            </form>
+          </GeneralSubscribe>
+        </Section>
       </main>
-      <SubscribeModal />
     </>
   );
 }
