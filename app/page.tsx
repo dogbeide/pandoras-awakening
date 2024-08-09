@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <form action="" method="POST" className="mt-3 flex flex-col">
               <div>
-                <label htmlFor="email" className="mr-2 font-bold">Email:</label>
+                <label htmlFor="subscribe-email" className="mr-2 font-bold">Email:</label>
                 <input type="email" name="email" id="subscribe-email" className="px-1" />
               </div>
               <BtnCTA type="submit" classNames="text-white text-2xl mt-5 w-24">
