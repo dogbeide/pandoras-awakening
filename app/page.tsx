@@ -6,7 +6,6 @@ import BtnCTA from "@/app/components/buttons/btn-cta";
 import Section from "./components/general/Section";
 import OfferingCard from "./components/cards/OfferingCard";
 import TherapistCard from "./components/cards/TherapistCard";
-import SubscribeModal from "./components/modals/SubscribeModal";
 
 import './home.css'
 import '@/app/components/buttons/btn-cta.css'
@@ -19,9 +18,9 @@ export default function Home() {
       <main>
         <Banner />
 
-        <Section classNames="bg-gradient-to-tr from-pandoras-purple to-pink-500">
+        <Section classNames="bg-pandoras-purple" >
           <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
-          <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-300 ${montserrat.className}`}>
+          <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-100 ${montserrat.className}`}>
             <p className="mt-3">Are you going through a challenging time in your life?</p>
             <p className="mt-3">We greatly empathize with what you might be experiencing</p>
             <p className="mt-3">and will do our best to help you through your circumstances with empathy and compassion.</p>
