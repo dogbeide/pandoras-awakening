@@ -47,7 +47,7 @@ export default function Home() {
           <BtnCTA ariaLabel="About Us" classNames='text-white mt-4' href='/about-us' fontSize="22px">ABOUT US</BtnCTA>
         </Section>
 
-        <Section classNames="bg-gradient-to-br from-white via-pandoras-lavender-50 to-white">
+        <Section classNames="bg-slate-200">
           <Title classNames="text-pandoras-purple hover:text-pandoras-orange" href="/about-us/renee-burwell">Our Therapist</Title>
           <TherapistCard 
             name="Renee Burwell"
@@ -83,7 +83,7 @@ export default function Home() {
           </a>
         </Section>
 
-        <Section classNames="bg-gradient-to-br from-white via-pandoras-teal to-white">
+        <Section classNames="bg-slate-200">
           <GeneralSubscribe
             imgUrl="/pexels-tim-douglas-6205772_800x959.jpg"
             imgAlt="open sesame message picture beautiful woman"

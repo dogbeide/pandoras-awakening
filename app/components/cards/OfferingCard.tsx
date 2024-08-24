@@ -16,11 +16,11 @@ export default function OfferingCard({ href, title, desc, imgUrl } : {
           alt={title}
           width={150}
           height={150}
-          className="rounded-full btn-cta-img hover-teal" 
+          className="rounded-full btn-cta-img hover-slate-200" 
         />
       </a>
       <div className="text-center flex flex-col">
-        <a className={`btn-cta-text hover:text-pandoras-teal text-3xl text-pandoras-orange mt-3 font-bold uppercase 
+        <a className={`btn-cta-text hover:text-slate-200 text-3xl text-pandoras-orange mt-3 font-bold uppercase 
                       ${justAnotherHand.className}`}
           href={href}>
           {title}
@@ -29,7 +29,7 @@ export default function OfferingCard({ href, title, desc, imgUrl } : {
         <span className="text-sm text-slate-200">
           {desc}
         </span>
-        <a className="btn-cta-text hover:text-pandoras-teal mt-6 text-pandoras-orange" href={href}>
+        <a className="btn-cta-text hover:text-slate-200 mt-6 text-pandoras-orange" href={href}>
           Learn More...
         </a>
       </div>

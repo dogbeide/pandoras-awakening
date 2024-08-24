@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { squarePeg } from '@/app/lib/fonts';
+import { montserrat, platypi, squarePeg } from '@/app/lib/fonts';
 
 import Dropdown from "./Dropdown";
 import BtnCTA from '../buttons/btn-cta';
@@ -56,9 +56,9 @@ const menuItems: MenuItem[] = [
 export default function Navbar() {
 
   return (
-    <div id="navbar" className='sticky top-0 z-40 bg-gradient-to-r from-white-50 via-25% via-white-50 to-pandoras-lavender-50'>
+    <div id="navbar" className='sticky top-0 z-40 bg-white-50'>
 
-      <div id='pre-nav' className="flex max-md:flex-col justify-between items-center bg-gradient-to-b from-pandoras-lavender-50 to-transparent bg-opacity-20 px-2">
+      <div id='pre-nav' className="flex max-md:flex-col justify-between items-center px-2">
         <div className='ml-9 max-md:ml-0'>
           <SocialIcons />
         </div>
@@ -72,13 +72,13 @@ export default function Navbar() {
           <Image className='nav-logo max-md:hidden' src="/logo.webp" alt="Pandora's Awakening logo" width={176} height={100} />
           <Image className='nav-logo-sm max-md:block hidden' src="/logo.webp" alt="Pandora's Awakening logo" width={113} height={64} />
         </Link>
-        <div className={`nav-items flex flex-row justify-around px-4 ${squarePeg.className} max-md:hidden`}>
+        <div className={`nav-items flex flex-row justify-around px-4 ${platypi.className} max-md:hidden`}>
           {menuItems[1].children?.map(item => (
             <Link
               key={item.title}
               href={item.route || '/'}
               className='text-pandoras-fuchsia hover:text-pandoras-orange px-2 py-4 text-lg max-lg:text-base max-[800px]:text-sm'
-              style={{textShadow: 'rgba(255, 255, 255, 0.5) 0px 1px'}}
+              style={{textShadow: 'rgba(255, 255, 255, 0.9) 0px 1px'}}
             >
               {item.title}
             </Link>

@@ -32,7 +32,7 @@ export default function Dropdown(props: Props) {
           {menuItems.map((item: any) => (
             <Link
               key={item.route}
-              className="hover:bg-pandoras-orange-50 text-slate-200 px-2 py-1 w-full text-sm"
+              className="hover:bg-pandoras-orange-50 text-white px-2 py-1 w-full text-sm"
               href={item?.route || ""}
               onClick={toggle}
             >

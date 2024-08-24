@@ -1,5 +1,4 @@
 import { justAnotherHand } from '@/app/lib/fonts';
-import { ButtonHTMLAttributes } from 'react';
 
 import './btn-cta.css'
 

@@ -24,3 +24,6 @@
 .btn-cta-img.hover-orange:hover {
   box-shadow: 0px 0px 1px 2px var(--pandoras-orange);
 }
+.btn-cta-img.hover-slate-200:hover {
+  box-shadow: 0px 0px 1px 2px rgb(226 232 240);
+}
