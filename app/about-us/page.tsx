@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div>
       <Section classNames="bg-gradient-to-tr from-pandoras-purple to-pandoras-pink text-center">
-        <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className}`}>Pandora’s Awakening</span>
+        <span className={`max-sm:text-2xl max-md:text-3xl text-4xl text-white mb-4 ${squarePeg.className}`}>Pandora’s Awakening</span>
         <SubTitle classNames="mt-2">
           The premise of Pandora’s Awakening stems from the Greek myth of Pandora’s box.
         </SubTitle>
