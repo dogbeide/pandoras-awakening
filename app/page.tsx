@@ -19,8 +19,8 @@ export default function Home() {
         <Banner />
 
         <Section classNames="bg-pandoras-purple" >
-          <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className} font-black`}>Pandora’s Awakening</span>
-          <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-100 ${montserrat.className}`}>
+          <span className={`max-sm:text-2xl max-md:text-3xl text-4xl  mb-4 ${squarePeg.className} font-black text-white`}>Pandora’s Awakening</span>
+          <span className={`spaced-paragraphs mx-4 text-center flex flex-col items-center text-slate-300 ${montserrat.className}`}>
             <p className="mt-3">Are you going through a challenging time in your life?</p>
             <p className="mt-3">We greatly empathize with what you might be experiencing</p>
             <p className="mt-3">and will do our best to help you through your circumstances with empathy and compassion.</p>
