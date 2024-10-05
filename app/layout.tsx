@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { ApolloProvider } from "@apollo/client/react";
+import { client } from "./lib/apollo";
 import { montserrat } from "./lib/fonts";
-import "./globals.css";
+
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
 import SubFooter from './components/footer/SubFooter';
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Home - Pandora's Awakening",

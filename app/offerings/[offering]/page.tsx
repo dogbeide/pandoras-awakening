@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+// import { client } from "@/app/lib/apollo";
 
 const offeringSlugs = [
   'sex-therapy',
