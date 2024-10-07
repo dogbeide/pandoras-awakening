@@ -12,16 +12,17 @@ export default async function Page() {
   })
 
   const blogPostPreviews = response?.data?.posts?.nodes
-  console.log('all previews', blogPostPreviews)
 
   return (
     <Section classNames="bg-slate-100">
       <Title classNames="text-black">
         Quiet Storm&apos;s Corner
       </Title>
-      {blogPostPreviews.map((post: any, idx: number) => (
-        <BlogPostPreview key={idx} _key={idx} post={post} />
-      ))}
+      <div className="flex flex-col items-start">
+        {blogPostPreviews.map((post: any, idx: number) => (
+          <BlogPostPreview key={idx} _key={idx} post={post} />
+        ))}
+      </div>
     </Section>
   )
 }

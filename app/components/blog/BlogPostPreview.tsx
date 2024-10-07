@@ -17,7 +17,7 @@ export default function BlogPostPreview({ _key, post } : {
   const isEven = _key % 2 == 0
 
   return (
-    <div className={`pb-8 ${isEven ? 'bg-white' : 'bg-slate-100'} py-4 px-2 hover:bg-pandoras-orange-10 transition-all duration-200`}>
+    <div className={`w-[100%] pb-8 ${isEven ? 'bg-white' : 'bg-slate-100'} py-4 px-2 hover:bg-pandoras-orange-10 transition-all duration-200`}>
       <Link href={{
         pathname: uri,
       }} className="block text-xl text-pandoras-orange font-bold mb-4 hover:cursor-pointer hover:text-pandoras-lavender">
