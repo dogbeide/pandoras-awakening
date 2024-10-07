@@ -3,6 +3,8 @@ import { GET_BLOG_POST_DETAIL } from "@/app/lib/gql-queries";
 import Image from "next/image";
 import BlogPostDetail from "../components/blog/BlogPostDetail";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Page({ params } : { 
   params : { 
     blogPost: string[],

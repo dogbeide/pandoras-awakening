@@ -5,6 +5,8 @@ import BlogPostPreview from "@/app/components/blog/BlogPostPreview";
 import Section from "../components/general/Section";
 import Title from "../components/text/Title";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
 
   const response = await client.query({
