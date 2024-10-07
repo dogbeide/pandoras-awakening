@@ -12,6 +12,7 @@ export default async function Page() {
   })
 
   const blogPostPreviews = response?.data?.posts?.nodes
+  console.log('all previews', blogPostPreviews)
 
   return (
     <Section classNames="bg-slate-100">
