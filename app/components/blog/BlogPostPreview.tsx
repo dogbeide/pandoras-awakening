@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import BtnCTA from "../buttons/btn-cta";
 
 export default function BlogPostPreview({ _key, post } : {
   _key: number,
@@ -9,7 +10,7 @@ export default function BlogPostPreview({ _key, post } : {
 }) {
 
   const { title, date, uri, author: { node: { name } }, excerpt } = post;
-  const sourceUrl = post.featuredImage?.node?.sourceUrl
+  const sourceUrl = post.featuredImage?.node?.sourceUrl;
 
   const coolDate = new Date(date)
   const coolDateStr = coolDate.toUTCString().split(' ').slice(0, -2).join(' ')
@@ -41,6 +42,9 @@ export default function BlogPostPreview({ _key, post } : {
           />
         </Link>
         <div className="text-[16px] text-black my-1 pl-4 max-md:pl-0 max-md:pt-2 col-span-3" dangerouslySetInnerHTML= {{ __html: excerpt }}></div>
+      </div>
+      <div className="flex flex-row justify-end w-[100%] mt-1">
+        <BtnCTA href={uri}>READ MORE</BtnCTA>
       </div>
     </div>
   )

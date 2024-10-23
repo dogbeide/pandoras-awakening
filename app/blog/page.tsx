@@ -13,7 +13,7 @@ export default async function Page() {
     query: GET_BLOG_POST_PREVIEWS,
   })
 
-  const blogPostPreviews = response?.data?.posts?.nodes
+  const blogPostPreviews = response?.data?.posts?.nodes.filter((post:any) => post.author.node.name != "Jae Porter")
 
   return (
     <Section classNames="bg-slate-100">

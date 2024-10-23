@@ -39,7 +39,7 @@ export default function BlogPostDetail({ post } : {
       </div>
 
       {/* content */}
-      <div className="bg-pandoras-orange-10 px-4 mx-1 py-4">
+      <div className="bg-pandoras-orange-10 px-4 mx-1 py-4 pb-8">
         <Image
           className="m-[1px] inline float-left mr-4 max-md:block max-md:float-none"
           src={sourceUrl}
