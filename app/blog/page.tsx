@@ -1,9 +1,8 @@
 import { client } from "@/app/lib/apollo";
 
 import { GET_BLOG_POST_PREVIEWS } from "@/app/lib/gql-queries";
-import BlogPostPreview from "@/app/components/blog/BlogPostPreview";
-import Section from "../components/general/Section";
-import Title from "../components/text/Title";
+import BlogPostPreviewList from "../components/blog/BlogPostPreviewList";
+import Paginator from "../components/blog/Paginator";
 
 export const dynamic = 'force-dynamic';
 
@@ -14,17 +13,13 @@ export default async function Page() {
   })
 
   const blogPostPreviews = response?.data?.posts?.nodes.filter((post:any) => post.author.node.name != "Jae Porter")
+  const pageInfo = response?.data?.posts?.pageInfo
 
   return (
-    <Section classNames="bg-slate-100">
-      <Title classNames="text-black">
-        Quiet Storm&apos;s Corner
-      </Title>
-      <div className="flex flex-col items-start">
-        {blogPostPreviews.map((post: any, idx: number) => (
-          <BlogPostPreview key={idx} _key={idx} post={post} />
-        ))}
-      </div>
-    </Section>
+    <>
+      <Paginator {...pageInfo} />
+      <BlogPostPreviewList blogPostPreviews={blogPostPreviews} />
+      <Paginator {...pageInfo} />
+    </>
   )
 }

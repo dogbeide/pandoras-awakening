@@ -1,5 +1,7 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { DefaultOptions } from "@apollo/client";
+import { QueryInfo } from "@apollo/client/core/QueryInfo";
+import { relayStylePagination } from "@apollo/client/utilities";
 
 const defaultOptions: DefaultOptions = {
   watchQuery: {
@@ -14,6 +16,14 @@ const defaultOptions: DefaultOptions = {
 
 export const client = new ApolloClient({
   uri: `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/graphql`,
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    typePolicies: {
+      Query: {
+        fields: {
+          posts: relayStylePagination(),
+        },
+      },
+    },
+  }),
   defaultOptions: defaultOptions,
 })
