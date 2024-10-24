@@ -1,8 +1,12 @@
 import { gql } from "@apollo/client"
 
 export const GET_BLOG_POST_PREVIEWS = gql`
-  query BlogPostPreviews {
-    posts(where: {status: PUBLISH, authorNotIn: "dXNlcjo2"}, first: 10, after: "10") {
+  query BlogPostPreviews($after: String = "10") {
+    posts(
+      where: {status: PUBLISH, authorNotIn: "dXNlcjo2"},
+      first: 10, 
+      after: $after
+    ) {
       nodes {
         author {
           node {
