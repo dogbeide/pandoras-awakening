@@ -10,9 +10,11 @@ const offeringSlugs = [
   'edmr-therapy',
   'concierge-counseling',
   'intensive-therapy',
-  'musicares',
-  'kundalini-yoga',
+  // 'musicares',
+  // 'kundalini-yoga',
   'media-speaking-engagements',
+  'healthy-families',
+  'events',
 ];
 
 const offeringSlugById = {
