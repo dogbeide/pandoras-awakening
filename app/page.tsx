@@ -65,6 +65,9 @@ export default function Home() {
 
         <Section classNames="bg-pandoras-purple">
           <Title classNames="text-slate-100 hover:text-pandoras-teal" href='/offerings'>Offerings</Title>
+          <div className="flex justify-center">
+            <span className="text-slate-300">(Servicing only clients 18 and older)</span>
+          </div>
           <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-2 max-lg:gap-5 gap-8">
             {offeringsPreview.slice(0, 4).map((offering) => (
               <OfferingCard
