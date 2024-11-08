@@ -5,6 +5,7 @@ import SubTitle from "../components/general/SubTitle";
 import TextSection from "../components/general/TextSection";
 import TherapistCard from "../components/cards/TherapistCard";
 import BtnCTA from "../components/buttons/btn-cta";
+import { scheduleUrl } from "../lib/links-data";
 
 export default function Page() {
 
@@ -54,7 +55,7 @@ export default function Page() {
         </TextSection>
 
         <div className="flex flex-row max-md:flex-col items-center mt-3">
-          <BtnCTA classNames="text-white" href="https://calendly.com/holisticsextherapist" target="_blank" ariaLabel="Schedule Appointment with Renee">
+          <BtnCTA classNames="text-white" href={scheduleUrl} target="_blank" ariaLabel="Schedule Appointment with Renee">
             SCHEDULE APPOINTMENT
           </BtnCTA>
           <span className="text-white mt-1 ml-2 max-md:ml-0"> with Renee today.</span>
@@ -99,7 +100,7 @@ export default function Page() {
             Certified Sex Therapist and Educator
           `}
         />
-        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
+        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
         <span className={`text-center text-pandoras-purple mt-6 text-sm italic`}>

@@ -3,6 +3,7 @@ import { offeringsPreview} from "./lib/offerings-data";
 
 import Banner from "./components/banner/Banner";
 import BtnCTA from "@/app/components/buttons/btn-cta";
+import { scheduleUrl } from "./lib/links-data";
 import Section from "./components/general/Section";
 import OfferingCard from "./components/cards/OfferingCard";
 import TherapistCard from "./components/cards/TherapistCard";
@@ -58,7 +59,7 @@ export default function Home() {
               Certified Sex Therapist and Educator
             `}
           />
-          <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
+          <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
             SCHEDULE APPOINTMENT
           </BtnCTA>
         </Section>

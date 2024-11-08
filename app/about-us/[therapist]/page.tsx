@@ -6,6 +6,7 @@ import TextSection from "@/app/components/general/TextSection";
 import TherapistCard from "@/app/components/cards/TherapistCard";
 import BtnCTA from "@/app/components/buttons/btn-cta";
 import { notFound } from "next/navigation";
+import { scheduleUrl } from "@/app/lib/links-data";
 
 const therapistNameBySlug: any = {
   'renee-burwell': 'Renee Burwell',
@@ -47,7 +48,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
             and I have a gift in helping people regain connection with their gifts and creativity.
           </span>
         </div>
-        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
+        <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
           SCHEDULE APPOINTMENT
         </BtnCTA>
       </Section>
@@ -89,7 +90,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
             and would love to help those needing guidance, clarity and healing along their journey.
           </span>
           <span>
-            <a href="https://calendly.com/holisticsextherapist" 
+            <a href={scheduleUrl} 
               className="underline text-pandoras-jasper hover:text-pandoras-light-orange"
               target="_blank"
             >
@@ -100,7 +101,7 @@ export default function Page({ params } : { params: { therapist: string }}) {
           <span className="font-semibold">the basics with including sexuality in your practice, sexuality attitude reassessments, and trauma-informed care.</span>
           <span>Currently, I have a waiting list for those looking for supervision as a licensed clinical social worker or those looking to be certified as an AASECT-certified sex therapist.</span>
           
-          <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-2 py-1 text-white" fontSize="22px" href="https://calendly.com/holisticsextherapist" target="_blank">
+          <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-2 py-1 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
             SCHEDULE APPOINTMENT
           </BtnCTA>
         </TextSection>
