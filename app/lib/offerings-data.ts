@@ -7,9 +7,9 @@ export const offeringsPreview = [
     imgUrl: '/Renee-Burwell-couples-therapy-thumbnail-min.webp'
   },
   {
-    title: 'Healthy Families',
-    desc: ``,
-    href: '/offerings/healthy-families',
+    title: 'Thriving Families',
+    desc: `Thriving Families focuses on couples and adults navigating transitions with having families, parenting, and caregiving family members and partners. We believe that strong families are the foundation of a thriving community. Our mission is to support families in navigating challenges, enhancing communication, and fostering resilience`,
+    href: '/offerings/thriving-families',
     imgUrl: '/meal-table_150x150.webp'
   },
   {
