@@ -18,70 +18,21 @@ export default function Page() {
     <Section classNames="bg-pandoras-purple [&>SubTitle]:text-pandoras-orange [&>*]:mb-5 
       leading-7 [&>p]:text-white [&>h3]:text-white [&>h3]:text-xl [&>ul]:text-white"
     >
-      <Title classNames="text-white">Intensive Therapy</Title>
+      <Title classNames="text-white">Intensive Therapy Packages</Title>
 
-      <SubTitle>
-        <span style={{ fontWeight: 400 }}>
-          Thriving Families is a subset of Pandora’s Awakening.
-        </span>
-      </SubTitle>
+      <img src="https://b1122150.smushcdn.com/1122150/wp-content/uploads/2019/11/Color_Free.jpg?lossy=1&strip=1&webp=1"
+        alt="" 
+      />
 
       <p className="font-bold">
-        Thriving Families focuses on couples and adults navigating transitions with having families, parenting, and caregiving family members and partners.   We believe that strong families are the foundation of a thriving community. Our mission is to support families in navigating challenges, enhancing communication, and fostering resilience.
+        Do you have a busy schedule or live out of town? 
+        Pandora's Awakening is now offering intensive &nbsp;
+        <a href="/offerings/couples-therapy" className="underline text-pandoras-orange hover:text-pandoras-lavender">Couples</a> 
+        &nbsp; and/or &nbsp;
+        <a href="/offerings/edmr-therapy" className="underline text-pandoras-orange hover:text-pandoras-lavender">EMDR therapy</a> 
+        &nbsp;
+        packages. Our intensive packages include 3, 6, 9 or twelve hours of therapy over a one or two-day time period. Mention that you are interested in one of our intensive therapy packages at the time of your consultation.
       </p>
-
-      <SubTitle>Our Approach</SubTitle>
-
-      <p className="">We provide a safe, nurturing environment where every family member can express their feelings and experiences. Our licensed therapists utilize evidence-based techniques to help families:</p>
-      <ul className="list-disc list-inside">
-        <li>Improve communication skills</li>
-        <li>Resolve conflicts constructively</li>
-        <li>Strengthen emotional bonds</li>
-        <li>Navigate life transitions together</li>
-        <li>Build coping strategies for stress and adversity</li>
-      </ul>
-
-      <SubTitle>Services Offered</SubTitle>
-
-      <ul className="[&>li]:mb-4">
-        <li>
-          <span className="font-bold">Family Therapy: </span>
-          <span>Explore dynamics and improve relationships within the family unit.</span>
-        </li>
-        <li>
-          <span className="font-bold">Parenting Support: </span>
-          <span>Gain tools and strategies to enhance parenting skills and address behavioral challenges.</span>
-        </li>
-        <li>
-          <span className="font-bold">Crisis Intervention: </span>
-          <span>Support families through difficult times with immediate strategies and resources.</span>
-        </li>
-        <li>
-          <span className="font-bold">Workshops: </span>
-          <span>Participate in interactive sessions focused on topics like effective communication, conflict resolution, and stress management.</span>
-        </li>
-      </ul>
-
-      <SubTitle>Why Choose Us?</SubTitle>
-
-      <ul className="[&>li]:mb-4">
-        <li>
-          <span className="font-bold">Experienced Therapists: </span>
-          <span>Our team has extensive training in family systems and therapy techniques.</span>
-        </li>
-        <li>
-          <span className="font-bold">Personalized Care: </span>
-          <span>We tailor our approach to meet the unique needs of each family.</span>
-        </li>
-        <li>
-          <span className="font-bold">Confidential and Compassionate: </span>
-          <span>We prioritize your privacy and approach every session with empathy and respect.</span>
-        </li>
-      </ul>
-
-      <SubTitle>Take the First Step</SubTitle>
-
-      <p className="font-bold">Building a healthier family dynamic starts with a conversation. Contact us today to schedule a consultation and begin your journey toward stronger relationships.</p>
 
       <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
         SCHEDULE APPOINTMENT
