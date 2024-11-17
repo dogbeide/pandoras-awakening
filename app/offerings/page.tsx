@@ -1,7 +1,14 @@
+import { Metadata } from "next"
+
 import { montserrat } from "../lib/fonts"
 import { offeringsPreview } from "../lib/offerings-data"
 import OfferingCard from "../components/cards/OfferingCard"
 import Title from "../components/text/Title"
+
+export const metadata: Metadata = {
+  title: "Offerings - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
 

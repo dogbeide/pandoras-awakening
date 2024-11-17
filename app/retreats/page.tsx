@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata } from "next";
 
 import Title from "../components/text/Title";
 import Section from "../components/general/Section";
@@ -7,6 +8,10 @@ import BtnCTA from "../components/buttons/btn-cta";
 import '@/app/components/buttons/btn-cta.css'
 import GeneralSubscribe from "../components/modals/GeneralSubscribe";
 
+export const metadata: Metadata = {
+  title: "Retreats - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
 

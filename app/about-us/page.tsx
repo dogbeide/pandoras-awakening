@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import { squarePeg } from "../lib/fonts";
 import Section from "../components/general/Section";
 import Title from "../components/text/Title";
@@ -6,6 +8,11 @@ import TextSection from "../components/general/TextSection";
 import TherapistCard from "../components/cards/TherapistCard";
 import BtnCTA from "../components/buttons/btn-cta";
 import { scheduleUrl } from "../lib/links-data";
+
+export const metadata: Metadata = {
+  title: "About Us - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
 

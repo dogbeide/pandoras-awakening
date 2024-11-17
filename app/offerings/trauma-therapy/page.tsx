@@ -9,7 +9,7 @@ import BtnCTA from "@/app/components/buttons/btn-cta"
 import { scheduleUrl } from "@/app/lib/links-data"
 
 export const metadata: Metadata = {
-  title: "Thriving Families - Pandora's Awakening",
+  title: "Trauma Therapy - Pandora's Awakening",
   description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
 };
 

@@ -1,3 +1,5 @@
+import { Metadata } from "next"
+
 import Title from "../components/text/Title"
 import SubscribeModal from "../components/modals/SubscribeModal"
 import SocialIcons from "../components/navbar/SocialIcons"
@@ -5,6 +7,11 @@ import GeneralSubscribe from "../components/modals/GeneralSubscribe"
 import BtnCTA from "../components/buttons/btn-cta"
 import Section from "../components/general/Section"
 import { squarePeg } from "../lib/fonts"
+
+export const metadata: Metadata = {
+  title: "Contact - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
 

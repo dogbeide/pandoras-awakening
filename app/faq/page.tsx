@@ -1,6 +1,13 @@
+import { Metadata } from "next";
+
 import faqs from "../lib/faqs-data"
 import Title from "../components/text/Title";
 import FaqItem from "./FaqItem";
+
+export const metadata: Metadata = {
+  title: "FAQs - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
 

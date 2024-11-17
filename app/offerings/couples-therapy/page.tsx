@@ -1,10 +1,16 @@
 import Image from "next/image"
+import { Metadata } from "next"
 
 import Section from "@/app/components/general/Section"
 import SubTitle from "@/app/components/general/SubTitle"
 import Title from "@/app/components/text/Title"
 import BtnCTA from "@/app/components/buttons/btn-cta"
 import { scheduleUrl } from "@/app/lib/links-data"
+
+export const metadata: Metadata = {
+  title: "Couples Therapy - Pandora's Awakening",
+  description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
+};
 
 export default function Page() {
   return (
