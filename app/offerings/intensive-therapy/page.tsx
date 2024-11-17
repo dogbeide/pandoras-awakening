@@ -26,7 +26,7 @@ export default function Page() {
 
       <p className="font-bold">
         Do you have a busy schedule or live out of town? 
-        Pandora's Awakening is now offering intensive &nbsp;
+        Pandora&apos;s Awakening is now offering intensive &nbsp;
         <a href="/offerings/couples-therapy" className="underline text-pandoras-orange hover:text-pandoras-lavender">Couples</a> 
         &nbsp; and/or &nbsp;
         <a href="/offerings/edmr-therapy" className="underline text-pandoras-orange hover:text-pandoras-lavender">EMDR therapy</a> 

@@ -14,7 +14,7 @@ import Book from "./Book"
 
 import './resources.css'
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Resources - Pandora's Awakening",
   description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
 };

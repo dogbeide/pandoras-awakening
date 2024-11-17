@@ -348,7 +348,6 @@ export default function Page() {
         data-sizes="(max-width: 300px) 100vw, 300px"
         className="size-medium wp-image-16385 alignleft lazyload"
         src="https://b1122150.smushcdn.com/1122150/wp-content/uploads/2021/06/Pandoras-Awakening-Woman-sitting-looking-thoughtful-300x200.jpg?lossy=1&strip=1&webp=1"
-        data-sizes="(max-width: 300px) 100vw, 300px"
       />
 
       <SubTitle>
