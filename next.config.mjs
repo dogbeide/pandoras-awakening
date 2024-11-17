@@ -7,7 +7,13 @@ const nextConfig = {
         hostname: 'pandorasawakening.com',
         port: '',
         pathname: '/**',
-    },
+      },
+      {
+        protocol: 'https',
+        hostname: 'b1122150.smushcdn.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

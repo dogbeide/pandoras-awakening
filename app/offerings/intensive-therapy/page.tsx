@@ -21,7 +21,9 @@ export default function Page() {
       <Title classNames="text-white">Intensive Therapy Packages</Title>
 
       <img src="https://b1122150.smushcdn.com/1122150/wp-content/uploads/2019/11/Color_Free.jpg?lossy=1&strip=1&webp=1"
-        alt="" 
+        alt="Intensive therapy package rocks purple sunlight sunset"
+        width={300}
+        height={200}
       />
 
       <p className="font-bold">

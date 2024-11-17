@@ -20,72 +20,68 @@ export default function Page() {
     >
       <Title classNames="text-white">EDMR Therapy</Title>
 
-      <SubTitle>
-        <span style={{ fontWeight: 400 }}>
-          Thriving Families is a subset of Pandora’s Awakening.
-        </span>
-      </SubTitle>
+      <Image
+        style={{ fontSize: 16 }}
+        alt="EDMR Therapy man looking up into starry sky"
+        width={300}
+        height={200}
+        src="https://b1122150.smushcdn.com/1122150/wp-content/uploads/2019/11/cosmic.jpg?lossy=1&strip=1&webp=1"
+      />
 
       <p className="font-bold">
-        Thriving Families focuses on couples and adults navigating transitions with having families, parenting, and caregiving family members and partners.   We believe that strong families are the foundation of a thriving community. Our mission is to support families in navigating challenges, enhancing communication, and fostering resilience.
+        Eye Movement Desensitization and Reprocessing (EMDR) therapy is an
+        integrative psychotherapy approach that has been extensively researched
+        and proven effective for the treatment of trauma.
       </p>
-
-      <SubTitle>Our Approach</SubTitle>
-
-      <p className="">We provide a safe, nurturing environment where every family member can express their feelings and experiences. Our licensed therapists utilize evidence-based techniques to help families:</p>
-      <ul className="list-disc list-inside">
-        <li>Improve communication skills</li>
-        <li>Resolve conflicts constructively</li>
-        <li>Strengthen emotional bonds</li>
-        <li>Navigate life transitions together</li>
-        <li>Build coping strategies for stress and adversity</li>
-      </ul>
-
-      <SubTitle>Services Offered</SubTitle>
-
-      <ul className="[&>li]:mb-4">
-        <li>
-          <span className="font-bold">Family Therapy: </span>
-          <span>Explore dynamics and improve relationships within the family unit.</span>
-        </li>
-        <li>
-          <span className="font-bold">Parenting Support: </span>
-          <span>Gain tools and strategies to enhance parenting skills and address behavioral challenges.</span>
-        </li>
-        <li>
-          <span className="font-bold">Crisis Intervention: </span>
-          <span>Support families through difficult times with immediate strategies and resources.</span>
-        </li>
-        <li>
-          <span className="font-bold">Workshops: </span>
-          <span>Participate in interactive sessions focused on topics like effective communication, conflict resolution, and stress management.</span>
-        </li>
-      </ul>
-
-      <SubTitle>Why Choose Us?</SubTitle>
-
-      <ul className="[&>li]:mb-4">
-        <li>
-          <span className="font-bold">Experienced Therapists: </span>
-          <span>Our team has extensive training in family systems and therapy techniques.</span>
-        </li>
-        <li>
-          <span className="font-bold">Personalized Care: </span>
-          <span>We tailor our approach to meet the unique needs of each family.</span>
-        </li>
-        <li>
-          <span className="font-bold">Confidential and Compassionate: </span>
-          <span>We prioritize your privacy and approach every session with empathy and respect.</span>
-        </li>
-      </ul>
-
-      <SubTitle>Take the First Step</SubTitle>
-
-      <p className="font-bold">Building a healthier family dynamic starts with a conversation. Contact us today to schedule a consultation and begin your journey toward stronger relationships.</p>
+      <SubTitle>How Does EMDR Work?</SubTitle>
+      <p>
+        Eye movement desensitization and reprocessing (EMDR) is a fairly new,
+        nontraditional type of psychotherapy. It&apos;s growing in popularity,
+        particularly for treating post-traumatic stress disorder (PTSD). PTSD
+        often occurs after experiences such as military combat, physical
+        assault, rape, or car accidents.
+      </p>
+      <p>
+        At first glance, EMDR appears to approach psychological issues in an
+        unusual way. It does not rely on talk therapy or medications. Instead,
+        EMDR uses a patient&apos;s own rapid, rhythmic eye movements. These eye
+        movements dampen the power of emotionally charged memories of past
+        traumatic events.
+      </p>
+      <SubTitle>What Can You Expect From EMDR?</SubTitle>
+      <p>
+        An EMDR treatment session can last up to 90 minutes. Your therapist will
+        move his or her fingers back and forth in front of your face and ask you
+        to follow these hand motions with your eyes. At the same time, the EMDR
+        therapist will have you recall a disturbing event. This will include the
+        emotions and body sensations that go along with it.
+      </p>
+      <p>
+        Gradually, the therapist will guide you to shift your thoughts to more
+        pleasant ones. Some therapists use alternatives to finger movements,
+        such as hand or toe tapping or musical tones.
+      </p>
+      <p>
+        People who use the technique argue that EMDR can weaken the effect of
+        negative emotions. Before and after each EMDR treatment, your therapist
+        will ask you to rate your level of distress. The hope is that your
+        disturbing memories will become less disabling.
+      </p>
 
       <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
         SCHEDULE APPOINTMENT
       </BtnCTA>
+
+      <p>
+        <sup>1 </sup>
+        {/* Source:{" "} */}
+        <a href="https://www.webmd.com/mental-health/emdr-what-is-it#1"
+          className="underline text-pandoras-orange hover:text-pandoras-lavender"
+          target="_blank"
+        >
+          https://www.webmd.com/mental-health/emdr-what-is-it#1
+        </a>
+      </p>
     </Section>
   )
 }
