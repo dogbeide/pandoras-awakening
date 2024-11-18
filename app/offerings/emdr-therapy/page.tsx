@@ -9,7 +9,7 @@ import BtnCTA from "@/app/components/buttons/btn-cta"
 import { scheduleUrl } from "@/app/lib/links-data"
 
 export const metadata: Metadata = {
-  title: "EDMR Therapy - Pandora's Awakening",
+  title: "EMDR Therapy - Pandora's Awakening",
   description: "Pandora's Awakening helps those with dysfunctional patterns and provides tools to live healthy mental and sex lives in the Nashville area.",
 };
 
@@ -18,7 +18,7 @@ export default function Page() {
     <Section classNames="bg-pandoras-purple [&>SubTitle]:text-pandoras-orange [&>*]:mb-5 
       leading-7 [&>p]:text-white [&>h3]:text-white [&>h3]:text-xl [&>ul]:text-white"
     >
-      <Title classNames="text-white">EDMR Therapy</Title>
+      <Title classNames="text-white">EMDR Therapy</Title>
 
       <Image
         style={{ fontSize: 16 }}
