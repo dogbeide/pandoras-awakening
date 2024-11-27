@@ -35,7 +35,7 @@ export default function Page() {
           <div>
             Subscribe for updates to come.
           </div>
-          <form action="" method="POST" className="mt-3 flex flex-col">
+          <form id="subscribe-form" name="Subscriptions" action="https://www.pleasureprincipalretreats.com/_api/wix-forms/v1/submit-form" method="POST" className="mt-3 flex flex-col">
             <div>
               <label htmlFor="subscribe-email" className="mr-2 font-bold">Email:</label>
               <input type="email" name="email" id="subscribe-email" className="px-1" />

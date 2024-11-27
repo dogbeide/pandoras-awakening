@@ -13,6 +13,7 @@ export default function BtnCTA({
   fontSize='18px',
   type='button',
   ariaLabel,
+  ariaDisabled,
   children
 } : {
   classNames?: string,
@@ -21,6 +22,7 @@ export default function BtnCTA({
   fontSize?: string,
   type?: "button" | "submit" | "reset" | undefined,
   ariaLabel?: string,
+  ariaDisabled?: string,
   children: React.ReactNode
 }) {
   return (
@@ -29,6 +31,7 @@ export default function BtnCTA({
         className={`btn-cta px-2 text-nowrap ${justAnotherHand.className} ${classNames}`}
         style={{fontSize: fontSize}}
         type={type}
+        aria-disabled={ariaDisabled || false}
       >
         {children}
       </button>
