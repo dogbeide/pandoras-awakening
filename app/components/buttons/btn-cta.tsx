@@ -22,7 +22,7 @@ export default function BtnCTA({
   fontSize?: string,
   type?: "button" | "submit" | "reset" | undefined,
   ariaLabel?: string,
-  ariaDisabled?: string,
+  ariaDisabled?: boolean,
   children: React.ReactNode
 }) {
   return (
