@@ -10,7 +10,8 @@ export const offeringsPreview = [
     title: 'Thriving Families',
     desc: `Thriving Families focuses on couples and adults navigating transitions with having families, parenting, and caregiving family members and partners. We believe that strong families are the foundation of a thriving community. Our mission is to support families in navigating challenges, enhancing communication, and fostering resilience`,
     href: '/offerings/thriving-families',
-    imgUrl: '/meal-table_150x150.webp'
+    // imgUrl: '/meal-table_150x150.webp',
+    imgUrl: '/healthy-families_183x183.jpg',
   },
   {
     title: 'Sex Therapy',

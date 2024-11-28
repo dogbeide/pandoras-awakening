@@ -20,6 +20,13 @@ export default function Page() {
     >
       <Title classNames="text-white">Thriving Families</Title>
 
+      <Image
+        src="/healthy-families_275x183.jpg"
+        alt="thriving families picture"
+        width={275}
+        height={183}
+      />
+
       <SubTitle>
         <span style={{ fontWeight: 400 }}>
           Thriving Families is a subset of Pandora’s Awakening.
