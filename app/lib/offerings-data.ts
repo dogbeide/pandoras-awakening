@@ -64,9 +64,11 @@ export const offeringsPreview = [
   },
   {
     title: 'Workshops and Events and Speaking Engagements',
-    desc: ``,
+    desc: `Renee is available for workshops, events, and speaking engagements. 
+          Please schedule a consultation for more information.`,
     href: '/offerings/events',
-    imgUrl: '/events_150x150.png'
+    imgUrl: '/renee-speaker-one_384x384.jpg',
+    // imgUrl: '/events_150x150.png',
   },
   // {
   //   title: 'MusiCares',
