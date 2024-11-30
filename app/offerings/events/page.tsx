@@ -4,10 +4,11 @@ import { Metadata } from "next"
 import Section from "@/app/components/general/Section"
 import SubTitle from "@/app/components/general/SubTitle"
 import Title from "@/app/components/text/Title"
-import TextSection from "@/app/components/general/TextSection"
 import BtnCTA from "@/app/components/buttons/btn-cta"
 import { scheduleUrl } from "@/app/lib/links-data"
 import BtnDownloadWrapper from "@/app/components/buttons/btn-download"
+
+import '@/app/components/buttons/btn-cta.css'
 
 export const metadata: Metadata = {
   title: "Workshops And Events And Speaking Engagements - Pandora's Awakening",
@@ -21,15 +22,16 @@ export default function Page() {
     >
       <Title classNames="text-white">Workshops And Events And Speaking Engagements</Title>
 
-      <Image
-        src="/renee-speaker-one.jpg"
-        alt="renee speaker one"
-        width={300}
-        height={400}
-      />
-
+      <a href="/about-us/renee-burwell" className="btn-cta-img hover-slate-200">
+        <Image
+          src="/renee-speaker-one.jpg"
+          alt="renee speaker one"
+          width={300}
+          height={400}
+        />
+      </a>
       <p className="font-bold">
-        Renee is available for workshops, events, and speaking engagements. Please schedule a consultation for more information.
+        <a href="/about-us/renee-burwell" className="text-pandoras-orange underline hover:text-pandoras-lavender">Renee</a> is available for workshops, events, and speaking engagements. Please schedule a consultation for more information.
       </p>
 
       {/* <p className="">Our therapists are focused on making sure professionals and the community are educated on a variety of mental and sexual health topics. Some of the topics our professionals may speak on include:</p> */}
@@ -58,7 +60,8 @@ export default function Page() {
         <li>Couples Therapy and Coaching</li>
       </ul>
 
-      <p className="">Renée Burwell is a nationally acclaimed
+      <p className=""><a href="/about-us/renee-burwell" className="text-pandoras-orange underline hover:text-pandoras-lavender">
+        Renée Burwell</a> is a nationally acclaimed
         psychotherapist and educator with specializations
         in sex therapy, psychedelic treatment, and trauma.
         She is a skilled facilitator offering trainings and
