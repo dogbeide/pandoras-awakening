@@ -7,6 +7,7 @@ import Title from "@/app/components/text/Title"
 import TextSection from "@/app/components/general/TextSection"
 import BtnCTA from "@/app/components/buttons/btn-cta"
 import { scheduleUrl } from "@/app/lib/links-data"
+import BtnDownloadWrapper from "@/app/components/buttons/btn-download"
 
 export const metadata: Metadata = {
   title: "Workshops And Events And Speaking Engagements - Pandora's Awakening",
@@ -181,9 +182,28 @@ export default function Page() {
         </div>
       </div>
 
+
       <BtnCTA ariaLabel="Schedule Appointment" classNames="px-2 mt-4 text-white" fontSize="22px" href={scheduleUrl} target="_blank">
         SCHEDULE APPOINTMENT
       </BtnCTA>
+
+      <div className="flex flex-col items-center">
+        <BtnDownloadWrapper>
+          <a download={true} href="/files/Burwell_CV_Main.pdf" className="hover:text-pandoras-lavender underline">
+            DOWNLOAD Renee CV
+          </a>
+        </BtnDownloadWrapper>
+        <BtnDownloadWrapper>
+          <a download={true} href="/files/Burwell_CV_Main.pdf">
+            <Image
+              src="/download-icon.png"
+              alt="download renee cv icon"
+              width={64}
+              height={64}
+            />
+          </a>
+        </BtnDownloadWrapper>
+      </div>
     </Section>
   )
 }

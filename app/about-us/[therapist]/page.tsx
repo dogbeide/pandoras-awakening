@@ -7,6 +7,7 @@ import TherapistCard from "@/app/components/cards/TherapistCard";
 import BtnCTA from "@/app/components/buttons/btn-cta";
 import { notFound } from "next/navigation";
 import { scheduleUrl } from "@/app/lib/links-data";
+import BtnDownloadWrapper from "@/app/components/buttons/btn-download";
 
 const therapistNameBySlug: any = {
   'renee-burwell': 'Renee Burwell',
@@ -127,6 +128,23 @@ export default function Page({ params } : { params: { therapist: string }}) {
             <span className="text-sm mt-2">2018</span>
             <span className="text-sm font-semibold text-pandoras-purple">Sex Educator of the Year</span>
           </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <BtnDownloadWrapper>
+            <BtnCTA classNames="text-black" href="/files/Burwell_CV_Main.pdf" fontSize="24px" download={true}>
+              DOWNLOAD Renee CV
+            </BtnCTA>
+          </BtnDownloadWrapper>
+          <BtnDownloadWrapper>
+            <a download={true} href="/files/Burwell_CV_Main.pdf">
+              <Image
+                src="/download-icon.png"
+                alt="download renee cv icon"
+                width={64}
+                height={64}
+              />
+            </a>
+          </BtnDownloadWrapper>
         </div>
       </Section>
       <Section classNames="bg-white">

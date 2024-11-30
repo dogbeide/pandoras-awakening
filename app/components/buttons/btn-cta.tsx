@@ -14,6 +14,7 @@ export default function BtnCTA({
   type='button',
   ariaLabel,
   ariaDisabled,
+  download,
   children
 } : {
   classNames?: string,
@@ -23,10 +24,11 @@ export default function BtnCTA({
   type?: "button" | "submit" | "reset" | undefined,
   ariaLabel?: string,
   ariaDisabled?: boolean,
+  download?: boolean,
   children: React.ReactNode
 }) {
   return (
-    <a aria-label={ariaLabel} href={href} target={target} rel='noopener'>
+    <a aria-label={ariaLabel} href={href} target={target} rel='noopener' download={download}>
       <button 
         className={`btn-cta px-2 text-nowrap ${justAnotherHand.className} ${classNames}`}
         style={{fontSize: fontSize}}
