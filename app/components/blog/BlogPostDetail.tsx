@@ -5,8 +5,9 @@ export default function BlogPostDetail({ post } : {
   post: any,
 }) {
 
-  const { title, date, content, author: { node: { name, slug: authorSlug } }, categories: { nodes } } = post;
-  const category:string = nodes[0].name;
+  const { title, date, content, author: { node: { name, slug: authorSlug } }, categories: { nodes: categoryNodes } } = post;
+  const category:string = categoryNodes[0].name;
+  const categoryUri:string = categoryNodes[0].uri
   const sourceUrl = post.featuredImage?.node?.sourceUrl;
 
   const coolDate = new Date(date)
@@ -30,7 +31,7 @@ export default function BlogPostDetail({ post } : {
             <div className="text-[12px]">
               <span className="text-gray-400">{coolDateStr.toUpperCase()} - </span>
               <span className="text-gray-400">PUBLISHED IN </span>
-              <Link href="#" className="text-black hover:text-pandoras-lavender">{category.toUpperCase()}</Link>
+              <Link href={categoryUri} className="text-black hover:text-pandoras-lavender">{category.toUpperCase()}</Link>
             </div>
           </div>
         </div>

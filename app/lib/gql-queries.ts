@@ -56,10 +56,66 @@ export const GET_PUBLISHED_AUTHORS = gql`
     }
   }
 `
+export const GET_CATEGORIES = gql`
+  query GetCategories {
+    categories {
+      nodes {
+        categoryId
+        slug
+        name
+      }
+    }
+  }
+`
+
 export const GET_BLOG_POST_PREVIEWS_AUTHOR = gql`
   query BlogPostPreviewsAuthor($after: String = "asdf", $authorId: [ID]) {
     posts(
       where: {status: PUBLISH, authorIn: $authorId}
+      first: 10
+      after: $after
+    ) {
+      nodes {
+        author {
+          node {
+            id
+            name
+            slug
+          }
+        }
+        date
+        id
+        slug
+        title
+        uri
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+            uri
+          }
+        }
+        status
+      }
+      pageInfo {
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+    }
+  }
+`
+
+export const GET_BLOG_POST_PREVIEWS_CATEGORY = gql`
+  query BlogPostPreviewsAuthor($after: String = "asdf", $categoryId: Int) {
+    posts(
+      where: {status: PUBLISH, categoryId: $categoryId}
       first: 10
       after: $after
     ) {
@@ -128,23 +184,4 @@ export const GET_BLOG_POST_DETAIL = gql`
     }
   }
 `
-// export const GET_BLOG_POST_DETAILs = gql`
-//   query BlogPostDetail {
-//     post(id: "/2021/06/27/the-elephant-in-the-room-racism-in-the-therapy-space", idType:URI) {
-//       author {
-//         node {
-//           name
-//         }
-//       }
-//       uri
-//       date
-//       categories {
-//         nodes {
-//           name
-//           uri
-//         }
-//       }
-//       content
-//     }
-//   }
-// `
+
