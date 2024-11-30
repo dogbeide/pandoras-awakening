@@ -5,7 +5,7 @@ export default function BlogPostDetail({ post } : {
   post: any,
 }) {
 
-  const { title, date, content, author: { node: { name } }, categories: { nodes } } = post;
+  const { title, date, content, author: { node: { name, slug: authorSlug } }, categories: { nodes } } = post;
   const category:string = nodes[0].name;
   const sourceUrl = post.featuredImage?.node?.sourceUrl;
 
@@ -26,7 +26,7 @@ export default function BlogPostDetail({ post } : {
             alt={name + " user image"}
           />
           <div className="mb-4 ml-3">
-            <Link href="#" className="text-[14px] mb-4 hover:text-pandoras-lavender">{name}</Link>
+            <Link href={`/author/${authorSlug}`} className="text-[14px] mb-4 hover:text-pandoras-lavender">{name}</Link>
             <div className="text-[12px]">
               <span className="text-gray-400">{coolDateStr.toUpperCase()} - </span>
               <span className="text-gray-400">PUBLISHED IN </span>

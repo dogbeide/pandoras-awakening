@@ -10,7 +10,65 @@ export const GET_BLOG_POST_PREVIEWS = gql`
       nodes {
         author {
           node {
+            id
             name
+            slug
+          }
+        }
+        date
+        id
+        slug
+        title
+        uri
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+            uri
+          }
+        }
+        status
+      }
+      pageInfo {
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+    }
+  }
+`
+export const GET_PUBLISHED_AUTHORS = gql`
+  query GetAuthors {
+    users(where: {hasPublishedPosts: POST}) {
+      edges {
+        node {
+          id
+          name
+          slug
+        }
+      }
+    }
+  }
+`
+export const GET_BLOG_POST_PREVIEWS_AUTHOR = gql`
+  query BlogPostPreviewsAuthor($after: String = "asdf", $authorId: [ID]) {
+    posts(
+      where: {status: PUBLISH, authorIn: $authorId}
+      first: 10
+      after: $after
+    ) {
+      nodes {
+        author {
+          node {
+            id
+            name
+            slug
           }
         }
         date
@@ -47,7 +105,9 @@ export const GET_BLOG_POST_DETAIL = gql`
     post(id: $id, idType: URI) {
       author {
         node {
+          id
           name
+          slug
         }
       }
       title

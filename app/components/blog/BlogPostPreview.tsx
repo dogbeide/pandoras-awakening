@@ -9,7 +9,7 @@ export default function BlogPostPreview({ _key, post } : {
   post: any,
 }) {
 
-  const { title, date, uri, author: { node: { name } }, excerpt } = post;
+  const { title, date, uri, author: { node: { name, slug: authorSlug } }, excerpt } = post;
   const sourceUrl = post.featuredImage?.node?.sourceUrl;
 
   const coolDate = new Date(date)
@@ -27,7 +27,7 @@ export default function BlogPostPreview({ _key, post } : {
       <div className="text-[14px] mb-4">
         <span className="text-gray-400">{coolDateStr.toUpperCase()} - </span>
         <span></span>
-        <Link href="#" className="hover:text-pandoras-lavender">{name}</Link>
+        <Link href={`/author/${authorSlug}`} className="hover:text-pandoras-lavender">{name}</Link>
       </div>
       <div className="grid grid-cols-5 max-md:flex max-md:flex-col">
         <Link href={{
