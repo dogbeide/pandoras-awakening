@@ -7,6 +7,7 @@ import BtnCTA from "../components/buttons/btn-cta";
 
 import '@/app/components/buttons/btn-cta.css'
 import GeneralSubscribe from "../components/modals/GeneralSubscribe";
+import SignUpForm from "./SignUpForm";
 
 export const metadata: Metadata = {
   title: "Retreats - Pandora's Awakening",
@@ -25,6 +26,7 @@ export default function Page() {
       />
       <Section classNames="text-center bg-gradient-to-br from-white via-pandoras-teal to-white">
         <Title classNames={`text-black`}>Retreats</Title>
+        
         <GeneralSubscribe
           imgUrl="/pexels-quang-nguyen-vinh-222549-6129569_mdlg.jpg"
           imgAlt="subscribe modal sun-hands-heart picture"
@@ -32,9 +34,16 @@ export default function Page() {
           <div className={`font-bold text-3xl pb-4`}>
             Interested in Future Retreats?
           </div>
-          <div>
+          {/* <div>
             Subscribe for updates to come.
-          </div>
+          </div> */}
+          <SignUpForm />
+        </GeneralSubscribe>
+        {/* <GeneralSubscribe
+          imgUrl="/pexels-quang-nguyen-vinh-222549-6129569_mdlg.jpg"
+          imgAlt="subscribe modal sun-hands-heart picture"
+        >
+          
           <form id="subscribe-form" name="Subscriptions" action="https://www.pleasureprincipalretreats.com/_api/wix-forms/v1/submit-form" method="POST" className="mt-3 flex flex-col">
             <div>
               <label htmlFor="subscribe-email" className="mr-2 font-bold">Email:</label>
@@ -44,7 +53,7 @@ export default function Page() {
               Sign Up
             </BtnCTA>
           </form>
-        </GeneralSubscribe>
+        </GeneralSubscribe> */}
       </Section>
 
       {/* <div className="bg-pandoras-purple 
