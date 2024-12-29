@@ -7,6 +7,7 @@ import GeneralSubscribe from "../components/modals/GeneralSubscribe"
 import BtnCTA from "../components/buttons/btn-cta"
 import Section from "../components/general/Section"
 import { squarePeg } from "../lib/fonts"
+import SignUpForm from "../retreats/SignUpForm"
 
 export const metadata: Metadata = {
   title: "Contact - Pandora's Awakening",
@@ -78,7 +79,8 @@ export default function Page() {
             <div>
               Subscribe to our newsletter to receive news and updates.
             </div>
-            <form action="" method="POST" className="mt-3 flex flex-col">
+            <SignUpForm />
+            {/* <form action="" method="POST" className="mt-3 flex flex-col">
               <div>
                 <label htmlFor="subscribe-email" className="mr-2 font-bold">Email:</label>
                 <input type="email" name="email" id="subscribe-email" className="px-1" />
@@ -86,7 +88,7 @@ export default function Page() {
               <BtnCTA type="submit" classNames="text-white text-2xl mt-5 w-24">
                 SIGN UP
               </BtnCTA>
-            </form>
+            </form> */}
           </GeneralSubscribe>
         </Section>
 

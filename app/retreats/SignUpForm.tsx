@@ -69,13 +69,20 @@ export default function SignUpForm() {
         </div>
         <div className="optionalParent">
           <div className="grid grid-cols-4">
-            <input
+            {/* <input
               type="submit"
               name="subscribe"
               id="mc-embedded-subscribe"
               className="button py-2 bg-pandoras-orange col-span-3"
               defaultValue="Subscribe"
-            />
+            /> */}
+
+            <div className="col-span-3">
+              <BtnCTA type="submit" name="subscribe" classNames="text-white text-2xl w-24">
+                SUBSCRIBE
+              </BtnCTA>
+            </div>
+            
             <p style={{ margin: "0px auto" }} className="col-span-1">
               <a
                 href="http://eepurl.com/i6UJU-"

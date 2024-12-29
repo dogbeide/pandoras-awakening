@@ -9,6 +9,7 @@ type btnCTATypes = {
 export default function BtnCTA({
   classNames,
   href,
+  name,
   target="_self",
   fontSize='18px',
   type='button',
@@ -19,6 +20,7 @@ export default function BtnCTA({
 } : {
   classNames?: string,
   href?: string,
+  name?: string,
   target?: string,
   fontSize?: string,
   type?: "button" | "submit" | "reset" | undefined,
@@ -34,6 +36,7 @@ export default function BtnCTA({
         style={{fontSize: fontSize}}
         type={type}
         aria-disabled={ariaDisabled || false}
+        name={name || "_name"}
       >
         {children}
       </button>

@@ -34,9 +34,9 @@ export default function Page() {
           <div className={`font-bold text-3xl pb-4`}>
             Interested in Future Retreats?
           </div>
-          {/* <div>
+          <div className="italic">
             Subscribe for updates to come.
-          </div> */}
+          </div>
           <SignUpForm />
         </GeneralSubscribe>
         {/* <GeneralSubscribe
