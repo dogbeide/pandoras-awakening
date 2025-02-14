@@ -263,6 +263,11 @@ export type bookType = {
 
 export const books = [
   {
+    title: "The Eros Sutras, Volume 1: Principles",
+    imgUrl: "/the eros sutras.jpg",
+    href: "https://www.amazon.ca/Eros-Sutras-1-Principles-ebook/dp/B0C8ZCJCHV",
+  },
+  {
     title: "Passionate Marriage: Keeping Love and Intimacy Alive in Committed Relationships",
     imgUrl: "/passionatemarriage-book.webp",
     href: "http://a.co/d/2O7r2fE",
