@@ -264,7 +264,7 @@ export type bookType = {
 export const books = [
   {
     title: "The Eros Sutras, Volume 1: Principles",
-    imgUrl: "/the eros sutras.jpg",
+    imgUrl: "/the eros sutras_200x300.jpg",
     href: "https://www.amazon.ca/Eros-Sutras-1-Principles-ebook/dp/B0C8ZCJCHV",
   },
   {
