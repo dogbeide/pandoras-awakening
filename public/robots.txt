@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.pandorasawakening.com
+Host: https://pandorasawakening.com
 
 # Sitemaps
-Sitemap: https://www.pandorasawakening.com/sitemap.xml
+Sitemap: https://pandorasawakening.com/sitemap.xml
